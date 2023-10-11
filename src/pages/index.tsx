@@ -1,7 +1,13 @@
+import { Communication } from '@/components/Communication'
+import { Header } from '@/components/Header'
+import { Banner } from '@/components/Banner'
+
 export default function Home() {
   return (
-    <main>
-      <h1 className="font-bold">Hello, World!</h1>
-    </main>
+    <>
+      <Communication />
+      <Header />
+      <Banner />
+    </>
   )
 }
