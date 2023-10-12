@@ -8,7 +8,7 @@ interface Props {
 
 export function Highlight({ icon, title, body }: Props) {
   return (
-    <div className="w-[394px] h-[200px] bg-white rounded shadow-md relative">
+    <div className="w-full h-[200px] md:h-[260px] lg:h-[220px] xl:h-[200px] bg-white rounded shadow-md relative">
       <div className="w-[100px] h-[100px] rounded-full bg-white shadow-md absolute left-[calc(50%-50px)] top-[-50px]">
         {icon}
       </div>

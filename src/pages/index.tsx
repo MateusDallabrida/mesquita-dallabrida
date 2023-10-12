@@ -7,7 +7,9 @@ export default function Home() {
     <>
       <Communication />
       <Header />
-      <Banner />
+      <div className="relative sm:static top-14">
+        <Banner />
+      </div>
     </>
   )
 }
