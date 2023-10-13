@@ -9,15 +9,15 @@ export function Banner() {
       <div className="relative">
         <div className="w-full h-[512px] bg-black opacity-70 absolute" />
         <video src="/video.mp4" autoPlay muted loop className="w-full h-[512px] object-cover" />
-        <div className="absolute top-[calc(50%-92px)] lg:top-[calc(50%-192px)] left-[calc(50%-190px)] lg:left-[calc(50%-486px)] flex items-center">
+        <div className="absolute top-[calc(50%-92px)] lg:top-[calc(50%-192px)] left-[calc(50%-175px)] md:left-[calc(50%-190px)] lg:left-[calc(50%-486px)] flex items-center">
           <h1 className={`${zenAntique.className} text-[256px] text-white hidden lg:block`}>
             M|D
           </h1>
           <div className="lg:ml-12">
-            <p className="w-[380px] lg:w-[460px] text-white font-black text-xl lg:text-2xl leading-7 lg:leading-9">
+            <p className="w-[350px] md:w-[380px] lg:w-[460px] text-white font-black text-lg md:text-xl lg:text-2xl leading-7 lg:leading-9">
               Transforme seu sonho em realidade e tenha um mundo de oportunidades ao conquistar seu passaporte europeu.
             </p>
-            <p className="w-[380px] lg:w-[460px] text-white text-sm lg:text-base font-medium mt-4">
+            <p className="w-[350px] md:w-[380px] lg:w-[460px] text-white text-sm lg:text-base font-medium mt-4">
             Um investimento em você e um legado para o futuro.
             </p>
             <a
