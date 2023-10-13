@@ -5,7 +5,7 @@ const zenAntique = Zen_Antique({ subsets: ['latin'], weight: '400' })
 
 export function Banner() {
   return (
-    <section className="h-auto md:h-[calc(100vh-104px)] bg-second flex flex-col">
+    <section className="h-auto md:h-[calc(100vh-120px)] bg-second flex flex-col">
       <div className="relative">
         <div className="w-full h-[512px] bg-black opacity-70 absolute" />
         <video src="/video.mp4" autoPlay muted loop className="w-full h-[512px] object-cover" />

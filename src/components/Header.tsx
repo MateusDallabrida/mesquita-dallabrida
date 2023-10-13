@@ -9,26 +9,26 @@ export function Header() {
 
   return (
     <header className="w-full bg-main text-white fixed sm:sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 xl:px-0 py-2 flex justify-between">
+      <div className="max-w-7xl mx-auto px-4 xl:px-0 py-4 flex justify-between">
         <h1 className={`${zenAntique.className} text-4xl`}>
           M|D
         </h1>
 
         <nav className='hidden sm:flex gap-8 items-center font-medium'>
           <Link
-            href="/" className="hover:underline underline-offset-4">
+            href="/" className="hover:underline underline-offset-4 font-bold">
             Início
           </Link>
-          <Link href="/#" className="hover:underline underline-offset-4">
+          <Link href="/#" className="hover:underline underline-offset-4 font-bold">
             Serviços
           </Link>
-          <Link href="/#" className="hover:underline underline-offset-4">
+          <Link href="/#" className="hover:underline underline-offset-4 font-bold">
             Sobre Nós
           </Link>
-          <Link href="/blog" className="hover:underline underline-offset-4">
+          <Link href="/blog" className="hover:underline underline-offset-4 font-bold">
             Blog
           </Link>
-          <Link href="/#" className="hover:underline underline-offset-4">
+          <Link href="/#" className="hover:underline underline-offset-4 font-bold">
             Contato
           </Link>
         </nav>
