@@ -8,6 +8,7 @@ import { Testimonials } from '@/components/Testimonials'
 import { OurBlog } from '@/components/OurBlog'
 import { Advantages } from '@/components/Advantages'
 import { FAQ } from '@/components/FAQ'
+import { Footer } from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <OurBlog />
         <Advantages />
         <FAQ />
+        <Footer />
       </div>
     </>
   )

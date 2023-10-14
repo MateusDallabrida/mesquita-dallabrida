@@ -17,7 +17,7 @@ export function FAQ() {
               href="https://api.whatsapp.com/send?phone=351939559818"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 text-main font-bold hover:underline underline-offset-4"
+              className="ml-1 text-main font-bold hover:underline underline-offset-4"
             >
               WhatsApp
             </a>
