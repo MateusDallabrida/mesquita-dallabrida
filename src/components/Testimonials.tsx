@@ -1,4 +1,4 @@
-import { Comments } from '@/components/Comments'
+import { Testimonial } from '@/components/Testimonial'
 
 export function Testimonials() {
   return (
@@ -9,10 +9,10 @@ export function Testimonials() {
         </h2>
 
         <div className="mt-12 grid md:grid-cols-2 gap-4 md:gap-12 px-4 xl:px-0">
-          <Comments />
-          <Comments />
-          <Comments />
-          <Comments />
+          <Testimonial />
+          <Testimonial />
+          <Testimonial />
+          <Testimonial />
         </div>
       </div>
     </section>

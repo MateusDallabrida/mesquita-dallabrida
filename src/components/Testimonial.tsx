@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { BsFillStarFill } from "react-icons/bs"
 
-export function Comments() {
+export function Testimonial() {
   return (
     <div className="w-full bg-white rounded-xl p-6 flex flex-col gap-4">
       <div className="flex items-center gap-2">
