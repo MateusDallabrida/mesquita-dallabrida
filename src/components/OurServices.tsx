@@ -20,9 +20,17 @@ export function OurServices() {
               sizes="100vw"
               className="w-full h-[400px] object-cover rounded-xl"
             />
-            <p className="w-full text-center text-white text-xl font-bold uppercase absolute bottom-10">
+            <p className="absolute bottom-20 w-full text-center text-white text-xl font-bold uppercase">
               Cidadania Portuguesa
             </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=351939559818"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-4 left-[calc(50%-93px)] bg-white text-main inline-block py-3 px-8 uppercase font-medium rounded transition-all"
+            >
+              Fale Conosco
+            </a>
           </div>
 
           <div className="relative mt-4 md:mt-0">
@@ -35,9 +43,17 @@ export function OurServices() {
               sizes="100vw"
               className="w-full h-[400px] object-top object-cover rounded-xl"
             />
-            <p className="w-full text-center text-white text-xl font-bold uppercase absolute bottom-10">
+            <p className="absolute bottom-20 w-full text-center text-white text-xl font-bold uppercase">
               Cidadania Italiana
             </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=351939559818"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-4 left-[calc(50%-93px)] bg-white text-main inline-block py-3 px-8 uppercase font-medium rounded transition-all"
+            >
+              Fale Conosco
+            </a>
           </div>
         </div>
 
@@ -53,9 +69,17 @@ export function OurServices() {
               sizes="100vw"
               className="w-full h-[400px] object-cover rounded-xl"
             />
-            <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-10">
+            <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-20">
               Vistos de Residência
             </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=351939559818"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-4 left-[calc(50%-93px)] bg-white text-main inline-block py-3 px-8 uppercase font-medium rounded transition-all"
+            >
+              Fale Conosco
+            </a>
           </div>
 
           <div className="relative">
@@ -68,9 +92,17 @@ export function OurServices() {
               sizes="100vw"
               className="w-full h-[400px] object-cover rounded-xl"
             />
-            <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-4">
+            <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-20">
               Inscrição de advogado na OAP
             </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=351939559818"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-4 left-[calc(50%-93px)] bg-white text-main inline-block py-3 px-8 uppercase font-medium rounded transition-all"
+            >
+              Fale Conosco
+            </a>
           </div>
 
           <div className="relative">
@@ -83,9 +115,17 @@ export function OurServices() {
               sizes="100vw"
               className="w-full h-[400px] object-cover rounded-xl"
             />
-            <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-4">
+            <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-20">
               Autorizações de Residência
             </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=351939559818"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-4 left-[calc(50%-93px)] bg-white text-main inline-block py-3 px-8 uppercase font-medium rounded transition-all"
+            >
+              Fale Conosco
+            </a>
           </div>
 
           <div className="relative">
@@ -98,9 +138,17 @@ export function OurServices() {
               sizes="100vw"
               className="w-full h-[400px] object-cover rounded-xl"
             />
-            <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-10">
+            <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-20">
               Casamento
             </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=351939559818"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-4 left-[calc(50%-93px)] bg-white text-main inline-block py-3 px-8 uppercase font-medium rounded transition-all"
+            >
+              Fale Conosco
+            </a>
           </div>
 
           <div className="relative">
@@ -113,9 +161,17 @@ export function OurServices() {
               sizes="100vw"
               className="w-full h-[400px] object-cover rounded-xl"
             />
-            <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-4">
+            <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-20">
               Abertura de atividade e empresas
             </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=351939559818"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-4 left-[calc(50%-93px)] bg-white text-main inline-block py-3 px-8 uppercase font-medium rounded transition-all"
+            >
+              Fale Conosco
+            </a>
           </div>
 
           <div className="relative">
@@ -128,9 +184,17 @@ export function OurServices() {
               sizes="100vw"
               className="w-full h-[400px] object-cover rounded-xl"
             />
-            <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-10">
+            <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-20">
               Atos notariais
             </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=351939559818"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-4 left-[calc(50%-93px)] bg-white text-main inline-block py-3 px-8 uppercase font-medium rounded transition-all"
+            >
+              Fale Conosco
+            </a>
           </div>
 
           <div className="relative">
@@ -143,9 +207,17 @@ export function OurServices() {
               sizes="100vw"
               className="w-full h-[400px] object-cover rounded-xl"
             />
-            <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-4">
+            <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-20">
               Reconhecimento de diplomas
             </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=351939559818"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-4 left-[calc(50%-93px)] bg-white text-main inline-block py-3 px-8 uppercase font-medium rounded transition-all"
+            >
+              Fale Conosco
+            </a>
           </div>
 
           <div className="relative">
@@ -158,9 +230,17 @@ export function OurServices() {
               sizes="100vw"
               className="w-full h-[400px] object-cover rounded-xl"
             />
-            <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-4">
+            <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-20">
               Reconhecimento de União Estável
             </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=351939559818"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute bottom-4 left-[calc(50%-93px)] bg-white text-main inline-block py-3 px-8 uppercase font-medium rounded transition-all"
+            >
+              Fale Conosco
+            </a>
           </div>
         </div>
       </div>
