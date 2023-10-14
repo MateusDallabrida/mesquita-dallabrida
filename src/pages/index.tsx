@@ -6,6 +6,7 @@ import { OurTeam } from '@/components/OurTeam'
 import { OurServices } from '@/components/OurServices'
 import { Testimonials } from '@/components/Testimonials'
 import { OurBlog } from '@/components/OurBlog'
+import { Advantages } from '@/components/Advantages'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <OurServices />
         <Testimonials />
         <OurBlog />
+        <Advantages />
       </div>
     </>
   )
