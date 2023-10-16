@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export function Thumbnail() {
   return (
@@ -7,9 +8,12 @@ export function Thumbnail() {
       <p className="text-sm uppercase text-main font-bold">
         Tema
       </p>
-      <h2 className="text-lg font-semibold text-gray-900 line-clamp-2">
+      <Link
+        href="/blog/1"
+        className="text-lg font-bold text-gray-900 hover:text-main line-clamp-2"
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae libero dolor...
-      </h2>
+      </Link>
       <div className="flex items-center gap-2">
         <Image
           src="/dallabrida_photo.png"
