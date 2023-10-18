@@ -23,7 +23,7 @@ export default function Home({ data }: any) {
       <Communication />
       <Header />
       <div className="relative sm:static top-[72px]">
-        <Banner apresentation={apresentation} />
+        {/* <Banner apresentation={apresentation} /> */}
         {/* <AboutUs aboutUs={aboutUs} /> */}
         <OurTeam />
         <OurServices />
