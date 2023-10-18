@@ -1,15 +1,15 @@
 import { fetchHygraphQuery } from "./fetchHygraphQuery"
 
-export function getApresentations() {
+export function getApresentation() {
   const query = `
     query MyQuery {
-      apresentations {
-        title
-        phone
+      apresentation(where: {title: "unique"}) {
+        heading
         caption
         video {
           url
         }
+        phone
       }
     }  
   `

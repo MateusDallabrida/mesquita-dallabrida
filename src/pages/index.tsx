@@ -10,18 +10,19 @@ import { Advantages } from '@/components/Advantages'
 import { FAQ } from '@/components/FAQ'
 import { Footer } from '@/components/Footer'
 
-import { getApresentations } from '@/utils/getApresentations'
+import { getApresentation } from '@/utils/getApresentation'
+import { getQualities } from '@/utils/getQualities'
 
 export default function Home({ data }: any) {
   if (!data) return
-  const { apresentations } = JSON.parse(data)
+  const { apresentation, qualities } = JSON.parse(data)
 
   return (
     <>
       <Communication />
       <Header />
       <div className="relative sm:static top-[72px]">
-        <Banner apresentation={apresentations[0]} />
+        <Banner apresentation={apresentation} qualities={qualities} />
         <AboutUs />
         <OurTeam />
         <OurServices />
@@ -36,11 +37,15 @@ export default function Home({ data }: any) {
 }
 
 export async function getStaticProps() {
-  const apresentations = await getApresentations()
+  const { apresentation } = await getApresentation()
+  const { qualities } = await getQualities()
 
   return {
     props: {
-      data: JSON.stringify(apresentations) || null
+      data: JSON.stringify({
+        apresentation,
+        qualities
+      }) || null
     }
   }
 }

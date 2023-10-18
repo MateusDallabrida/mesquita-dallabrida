@@ -3,18 +3,24 @@ import { Highlight } from '@/components/Highlight'
 import { Zen_Antique } from 'next/font/google'
 const zenAntique = Zen_Antique({ subsets: ['latin'], weight: '400' })
 
+interface quality {
+  heading: string
+  caption: string
+}
+
 interface Props {
   apresentation: {
-    title: string
+    heading: string
     caption: string
     phone: number
     video: {
       url: string
     }
   }
+  qualities: quality[]
 }
 
-export function Banner({ apresentation }: Props) {
+export function Banner({ apresentation, qualities }: Props) {
 
   return (
     <section className="h-auto md:h-[calc(100vh-120px)] bg-second flex flex-col">
@@ -27,7 +33,7 @@ export function Banner({ apresentation }: Props) {
           </h1>
           <div className="lg:ml-12">
             <p className="w-[350px] md:w-[380px] lg:w-[460px] text-white font-black text-lg md:text-xl lg:text-2xl leading-7 lg:leading-9">
-              {apresentation.title}
+              {apresentation.heading}
             </p>
             <p className="w-[350px] md:w-[380px] lg:w-[460px] text-white text-sm lg:text-base font-medium mt-4">
               {apresentation.caption}
@@ -48,18 +54,18 @@ export function Banner({ apresentation }: Props) {
         <div className="h-full max-w-7xl mx-auto px-4 xl:px-0 flex flex-col md:flex-row gap-16 md:gap-3 lg:gap-6 xl:gap-12 items-center">
           <Highlight
             icon={<MdSearch className="w-12 h-12 text-main absolute top-[calc(50%-24px)] left-[calc(50%-24px)]" />}
-            title="Pesquisa"
-            body="Realizamos a pesquisa de genealogia para determinar se você possui elegibilidade para a obter a cidadania."
+            title={qualities[0].heading}
+            body={qualities[0].caption}
           />
           <Highlight
             icon={<MdOutlineCompassCalibration className="w-12 h-12 text-main absolute top-[calc(50%-24px)] left-[calc(50%-24px)]" />}
-            title="Acompanhamento"
-            body="Assistência e suporte ao longo de todo o procedimento de obtenção de nacionalidade."
+            title={qualities[1].heading}
+            body={qualities[1].caption}
           />
           <Highlight
             icon={<MdLanguage className="w-12 h-12 text-main absolute top-[calc(50%-24px)] left-[calc(50%-24px)]" />}
-            title="Deferimento do Processo"
-            body="Após ter sua dupla cidadania deferida, te entregaremos um passo a passo de como solicitar seu passaporte europeu."
+            title={qualities[2].heading}
+            body={qualities[2].caption}
           />
         </div>
       </div>
