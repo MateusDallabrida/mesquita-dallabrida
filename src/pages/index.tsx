@@ -12,10 +12,15 @@ import { Footer } from '@/components/Footer'
 
 import { getApresentation } from '@/utils/getApresentation'
 import { getQualities } from '@/utils/getQualities'
+import { getAboutUs } from '@/utils/getAboutUs'
 
 export default function Home({ data }: any) {
   if (!data) return
-  const { apresentation, qualities } = JSON.parse(data)
+  const {
+    apresentation,
+    qualities,
+    aboutUs
+  } = JSON.parse(data)
 
   return (
     <>
@@ -23,7 +28,7 @@ export default function Home({ data }: any) {
       <Header />
       <div className="relative sm:static top-[72px]">
         <Banner apresentation={apresentation} qualities={qualities} />
-        <AboutUs />
+        <AboutUs aboutUs={aboutUs} />
         <OurTeam />
         <OurServices />
         <Testimonials />
@@ -39,12 +44,14 @@ export default function Home({ data }: any) {
 export async function getStaticProps() {
   const { apresentation } = await getApresentation()
   const { qualities } = await getQualities()
+  const { aboutUs } = await getAboutUs()
 
   return {
     props: {
       data: JSON.stringify({
         apresentation,
-        qualities
+        qualities,
+        aboutUs
       }) || null
     }
   }

@@ -1,6 +1,16 @@
 import Image from "next/image"
 
-export function AboutUs() {
+interface Props {
+  aboutUs: {
+    image: {
+      url: string
+    }
+    phone: number
+    description: string
+  }
+}
+
+export function AboutUs({ aboutUs }: Props) {
   return (
     <section>
       <div className="max-w-7xl mx-auto py-16">
@@ -10,7 +20,7 @@ export function AboutUs() {
 
         <div className="mt-12 md:grid grid-cols-2 gap-8 lg:gap-12 px-4 xl:px-0">
           <Image
-            src="/about_us.jpeg"
+            src={aboutUs.image.url}
             alt="Os advogados Mateus e Cássia estão exibindo um livro de direito"
             width={0}
             height={0}
@@ -19,20 +29,13 @@ export function AboutUs() {
           />
 
           <div className="w-full">
-            <p className="text-lg lg:text-xl leading-7 lg:leading-8 text-gray-900 mt-6 lg:mt-12">
-              Nosso escritório nasceu do sonho de um casal de advogados em morar na Europa e ajudar você e sua família a realizar esse sonho também.
-            </p>
-            <p className="text-lg lg:text-xl leading-7 lg:leading-8 text-gray-900 mt-6 lg:mt-12">
-              Atuamos de forma personalizada para que você e sua família imigrem de forma legal e planejada!            </p>
-            <p className="text-lg lg:text-xl leading-7 lg:leading-8 text-gray-900 mt-6 lg:mt-12">
-              Sabemos que quando se trata de processos de imigração, você e a sua família precisam de alguém em quem possam confiar.
-            </p>
-            <p className="text-lg lg:text-xl leading-7 lg:leading-8 text-gray-900 mt-6 lg:mt-12">
-              Nossa equipe possui o conhecimento e a experiência necessários neste delicado processo, solucionando de forma ágil e diligente.
-            </p>
-
+            {aboutUs.description.split('\n\n').map((paragraph, index) => (
+              <p key={index} className="text-lg lg:text-xl leading-7 lg:leading-8 text-gray-900 mt-6 lg:mt-12">
+                {paragraph}
+              </p>
+            ))}
             <a
-              href="https://api.whatsapp.com/send?phone=351939559818"
+              href={`https://api.whatsapp.com/send?phone=${aboutUs.phone}`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-main text-white inline-block py-3 px-8 uppercase font-medium rounded mt-6 lg:mt-12 hover:bg-white hover:text-main border border-main transition-all"
