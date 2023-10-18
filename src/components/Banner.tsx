@@ -3,10 +3,10 @@ import { Highlight } from '@/components/Highlight'
 import { Zen_Antique } from 'next/font/google'
 const zenAntique = Zen_Antique({ subsets: ['latin'], weight: '400' })
 
-// interface quality {
-//   heading: string
-//   caption: string
-// }
+interface quality {
+  heading: string
+  caption: string
+}
 
 interface Props {
   apresentation: {
@@ -17,16 +17,16 @@ interface Props {
       url: string
     }
   }
-  // qualities: quality[]
+  qualities: quality[]
 }
 
-export function Banner({ apresentation }: Props) {
+export function Banner({ apresentation, qualities }: Props) {
 
   return (
     <section className="h-auto md:h-[calc(100vh-120px)] bg-second flex flex-col">
       <div className="relative">
         <div className="w-full h-[512px] bg-black opacity-70 absolute" />
-        {/* <video src={apresentation.video.url} autoPlay muted loop className="w-full h-[512px] object-cover" /> */}
+        <video src={apresentation.video.url} autoPlay muted loop className="w-full h-[512px] object-cover" />
         <div className="absolute top-[calc(50%-92px)] lg:top-[calc(50%-192px)] left-[calc(50%-175px)] md:left-[calc(50%-190px)] lg:left-[calc(50%-486px)] flex items-center">
           <h1 className={`${zenAntique.className} text-[256px] text-white hidden lg:block`}>
             M|D
@@ -50,7 +50,7 @@ export function Banner({ apresentation }: Props) {
         </div>
       </div>
 
-      {/* <div className="md:flex-grow py-16 md:py-0">
+      <div className="md:flex-grow py-16 md:py-0">
         <div className="h-full max-w-7xl mx-auto px-4 xl:px-0 flex flex-col md:flex-row gap-16 md:gap-3 lg:gap-6 xl:gap-12 items-center">
           <Highlight
             icon={<MdSearch className="w-12 h-12 text-main absolute top-[calc(50%-24px)] left-[calc(50%-24px)]" />}
@@ -68,7 +68,7 @@ export function Banner({ apresentation }: Props) {
             body={qualities[2].caption}
           />
         </div>
-      </div> */}
+      </div>
     </section>
   )
 }
