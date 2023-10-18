@@ -50,7 +50,7 @@ export function Banner({ apresentation, qualities }: Props) {
         </div>
       </div>
 
-      <div className="md:flex-grow py-16 md:py-0">
+      {/* <div className="md:flex-grow py-16 md:py-0">
         <div className="h-full max-w-7xl mx-auto px-4 xl:px-0 flex flex-col md:flex-row gap-16 md:gap-3 lg:gap-6 xl:gap-12 items-center">
           <Highlight
             icon={<MdSearch className="w-12 h-12 text-main absolute top-[calc(50%-24px)] left-[calc(50%-24px)]" />}
@@ -68,7 +68,7 @@ export function Banner({ apresentation, qualities }: Props) {
             body={qualities[2].caption}
           />
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
