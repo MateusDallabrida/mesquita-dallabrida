@@ -53,7 +53,7 @@ export function OurTeam() {
 
             <div>
               <strong className="text-2xl font-bold text-main uppercase">
-              Cássia Mesquita
+                Cássia Mesquita
               </strong>
               <p className="text-gray-900 uppercase text-center mt-2">
                 Advocacia Imigratória
