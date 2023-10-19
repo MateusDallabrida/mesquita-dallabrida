@@ -38,7 +38,7 @@ export default function Home({ data }: any) {
     <>
       <Communication />
       <Header />
-      <div className="relative sm:static top-[72px]">
+      <div className="relative sm:static top-[64px]">
         <Banner apresentation={apresentation} qualities={qualities} />
         <AboutUs aboutUs={aboutUs} />
         <OurTeam ourTeams={ourTeams} />

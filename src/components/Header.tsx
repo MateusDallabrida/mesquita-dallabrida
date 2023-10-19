@@ -9,7 +9,7 @@ export function Header() {
 
   return (
     <header className="w-full bg-main text-white fixed sm:sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 xl:px-0 py-4 flex justify-between">
+      <div className="max-w-7xl mx-auto px-4 xl:px-0 py-3 flex justify-between">
         <h1 className={`${zenAntique.className} text-4xl`}>
           M|D
         </h1>
@@ -19,16 +19,16 @@ export function Header() {
             href="/" className="hover:underline underline-offset-4 font-bold">
             Início
           </Link>
-          <Link href="/#" className="hover:underline underline-offset-4 font-bold">
+          <Link href="/#services" className="hover:underline underline-offset-4 font-bold">
             Serviços
           </Link>
-          <Link href="/#" className="hover:underline underline-offset-4 font-bold">
+          <Link href="/#about-us" className="hover:underline underline-offset-4 font-bold">
             Sobre Nós
           </Link>
           <Link href="/blog" className="hover:underline underline-offset-4 font-bold">
             Blog
           </Link>
-          <Link href="/#" className="hover:underline underline-offset-4 font-bold">
+          <Link href="/#contact" className="hover:underline underline-offset-4 font-bold">
             Contato
           </Link>
         </nav>

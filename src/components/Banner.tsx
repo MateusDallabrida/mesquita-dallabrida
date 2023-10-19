@@ -23,9 +23,9 @@ interface Props {
 export function Banner({ apresentation, qualities }: Props) {
 
   return (
-    <section className="h-auto md:h-[calc(100vh-120px)] bg-second flex flex-col">
+    <section className="h-auto md:h-[calc(100vh-112px)] bg-second flex flex-col">
       <div className="relative">
-        <div className="w-full h-[512px] bg-black opacity-70 absolute" />
+        <div className="w-full h-[512px] bg-black opacity-50 absolute" />
         <video src={apresentation.video.url} autoPlay muted loop className="w-full h-[512px] object-cover" />
         <div className="absolute top-[calc(50%-92px)] lg:top-[calc(50%-192px)] left-[calc(50%-175px)] md:left-[calc(50%-190px)] lg:left-[calc(50%-486px)] flex items-center">
           <h1 className={`${zenAntique.className} text-[256px] text-white hidden lg:block`}>

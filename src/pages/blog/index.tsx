@@ -31,7 +31,7 @@ export default function Blog({ data }: any) {
     <>
       <Communication />
       <Header />
-      <div className="relative sm:static top-[72px]">
+      <div className="relative sm:static top-[64px]">
         <main className="max-w-7xl mx-auto p-4 xl:px-0">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {posts.map((post: Post) => (

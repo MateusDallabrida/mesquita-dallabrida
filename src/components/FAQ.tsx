@@ -1,4 +1,5 @@
 import { Acordeon } from "@/components/Acordeon"
+import Image from "next/image"
 
 interface Faq {
   answer: string
@@ -18,7 +19,7 @@ export function FAQ({ faqs }: Props) {
             FAQ
           </p>
           <p className="text-4xl text-gray-900 font-bold">
-            Tudo o que você precisa saber sobre a Mesquita & Dallabrida
+            Perguntas frequentes dos nossos clientes.
           </p>
           <p className="text-gray-900">
             Ainda tem alguma dúvida? Fale conosco pelo
@@ -31,6 +32,14 @@ export function FAQ({ faqs }: Props) {
               WhatsApp
             </a>
           </p>
+          <Image
+            src="/italy.jpg"
+            alt=""
+            width={0}
+            height={0}
+            sizes="100vw"
+            className="w-full max-h-[768px] object-cover rounded-xl"
+          />
         </div>
 
         <div className="flex flex-col gap-6">

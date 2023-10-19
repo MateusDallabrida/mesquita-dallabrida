@@ -33,7 +33,7 @@ export default function Post({ data }: any) {
     <>
       <Communication />
       <Header />
-      <div className="relative sm:static top-[72px]">
+      <div className="relative sm:static top-[64px]">
         <main className="max-w-3xl mx-auto p-4 xl:px-0">
           <div className="flex gap-4 flex-wrap items-center">
             <p className="text-sm font-medium py-1 px-3 text-main bg-red-100 rounded-2xl">

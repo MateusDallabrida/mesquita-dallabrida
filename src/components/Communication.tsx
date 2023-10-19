@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BsFacebook, BsInstagram, BsLinkedin, BsWhatsapp, BsYoutube } from 'react-icons/bs'
+import { BsInstagram, BsWhatsapp, BsYoutube } from 'react-icons/bs'
 
 export function Communication() {
   const fusoLisboa = "Europe/Lisbon"
@@ -45,11 +45,15 @@ export function Communication() {
         </div>
 
         <div className='flex items-center gap-3 md:gap-6'>
-          <BsFacebook className="w-5 h-5" />
-          <BsInstagram className="w-5 h-5" />
-          <BsLinkedin className="w-5 h-5" />
-          <BsWhatsapp className="w-5 h-5" />
-          <BsYoutube className="w-5 h-5" />
+          <a href="https://www.instagram.com/livelisboa.pt" target="_blank">
+            <BsInstagram className="w-5 h-5" />
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=351939559818" target="_blank">
+            <BsWhatsapp className="w-5 h-5" />
+          </a>
+          <a href="https://www.youtube.com/@livelisboa" target="_blank">
+            <BsYoutube className="w-5 h-5" />
+          </a>
         </div>
       </div>
     </div>

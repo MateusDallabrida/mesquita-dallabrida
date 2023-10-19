@@ -12,7 +12,7 @@ interface Props {
 
 export function AboutUs({ aboutUs }: Props) {
   return (
-    <section>
+    <section id="about-us">
       <div className="max-w-7xl mx-auto py-16">
         <h2 className="text-5xl font-bold uppercase text-main text-center">
           Sobre Nós
