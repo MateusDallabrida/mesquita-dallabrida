@@ -4,9 +4,10 @@ interface Props {
   srcImage: string
   altImage: string
   title: string
+  phone: number
 }
 
-export function Service({ srcImage, altImage, title }: Props) {
+export function Service({ srcImage, altImage, title, phone }: Props) {
   return (
     <div className="relative">
       <div className="w-full h-[400px] bg-main opacity-50 absolute rounded-xl" />
@@ -22,7 +23,7 @@ export function Service({ srcImage, altImage, title }: Props) {
         {title}
       </p>
       <a
-        href="https://api.whatsapp.com/send?phone=351939559818"
+        href={`https://api.whatsapp.com/send?phone=${phone}`}
         target="_blank"
         rel="noopener noreferrer"
         className="absolute bottom-4 left-[calc(50%-93px)] bg-white text-main inline-block py-3 px-8 uppercase font-medium rounded transition-all"

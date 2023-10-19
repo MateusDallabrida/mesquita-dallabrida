@@ -1,6 +1,16 @@
 import { MdLocationOn, MdPhone, MdAttachEmail } from "react-icons/md"
 
-export function Footer() {
+interface Footer {
+  address: string
+  email: string
+  phone: string
+}
+
+interface Props {
+  footer: Footer
+}
+
+export function Footer({ footer }: Props) {
   return (
     <footer className="bg-main">
       <div className="max-w-7xl mx-auto pt-16 grid md:grid-cols-2 gap-12 px-4 xl:px-0">
@@ -17,21 +27,21 @@ export function Footer() {
           </h3>
           <p className="flex gap-2 items-center text-white mb-12">
             <MdLocationOn className="w-5 h-5" />
-            R. Dr. João de Barros 15, 1500-230 Lisboa, Portugal
+            {footer.address}
           </p>
           <h3 className="text-4xl text-white font-bold mb-4">
             Telefone
           </h3>
           <p className="flex gap-2 items-center text-white mb-12">
             <MdPhone className="w-5 h-5" />
-            +351 939 559 818
+            {footer.phone}
           </p>
           <h3 className="text-4xl text-white font-bold mb-4">
             E-mail
           </h3>
           <p className="flex gap-2 items-center text-white">
             <MdAttachEmail className="w-5 h-5" />
-            mdallabrida.advocacia@gmail.com
+            {footer.email}
           </p>
         </div>
       </div>
