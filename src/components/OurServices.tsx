@@ -42,6 +42,7 @@ export function OurServices({ services }: Props) {
             .filter(service => service.highlight === false)
             .map((service: Service) => (
               <Service
+                key={service.title}
                 srcImage={service.image.url}
                 altImage="Serviço"
                 title={service.title}
