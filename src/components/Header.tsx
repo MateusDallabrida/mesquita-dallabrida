@@ -44,19 +44,19 @@ export function Header() {
             Início
           </Link>
           <Link
-            href="/#" className="w-full py-6 px-8 font-medium text-gray-900 hover:bg-second">
+            href="/#services" className="w-full py-6 px-8 font-medium text-gray-900 hover:bg-second">
             Serviços
           </Link>
           <Link
-            href="/#" className="w-full py-6 px-8 font-medium text-gray-900 hover:bg-second">
+            href="/#about-us" className="w-full py-6 px-8 font-medium text-gray-900 hover:bg-second">
             Sobre Nós
           </Link>
           <Link
-            href="/#" className="w-full py-6 px-8 font-medium text-gray-900 hover:bg-second">
+            href="/blog" className="w-full py-6 px-8 font-medium text-gray-900 hover:bg-second">
             Blog
           </Link>
           <Link
-            href="/#" className="w-full py-6 px-8 font-medium text-gray-900 hover:bg-second">
+            href="/#contact" className="w-full py-6 px-8 font-medium text-gray-900 hover:bg-second">
             Contato
           </Link>
         </nav>
