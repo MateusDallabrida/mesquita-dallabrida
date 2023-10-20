@@ -49,6 +49,18 @@ export function OurServices({ services }: Props) {
                 phone={service.phone}
               />
           ))}
+          <Service
+            srcImage="/service_11.jpg"
+            altImage="Serviço"
+            title="Busca de certidões em Portugal e na Itália"
+            phone={351939559818}
+          />
+          <Service
+            srcImage="/service_12.jpg"
+            altImage="Serviço"
+            title="Reconhecimento de divórcio ocorrido no estrangeiro"
+            phone={351939559818}
+          />
         </div>
       </div>
     </section>
