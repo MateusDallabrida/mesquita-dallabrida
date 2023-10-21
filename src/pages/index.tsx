@@ -9,6 +9,7 @@ import { OurBlog } from '@/components/OurBlog'
 import { Advantages } from '@/components/Advantages'
 import { FAQ } from '@/components/FAQ'
 import { Footer } from '@/components/Footer'
+import { Qualities } from '@/components/Qualities'
 
 import { getApresentation } from '@/utils/getApresentation'
 import { getQualities } from '@/utils/getQualities'
@@ -39,7 +40,8 @@ export default function Home({ data }: any) {
       <Communication />
       <Header />
       <div className="relative sm:static top-[64px]">
-        <Banner apresentation={apresentation} qualities={qualities} />
+        <Banner apresentation={apresentation} />
+        <Qualities qualities={qualities} />
         <AboutUs aboutUs={aboutUs} />
         <OurTeam ourTeams={ourTeams} />
         <OurServices services={services} />
