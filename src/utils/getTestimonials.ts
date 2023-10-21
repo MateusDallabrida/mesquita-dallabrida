@@ -3,7 +3,7 @@ import { fetchHygraphQuery } from "./fetchHygraphQuery"
 export function getTestimonials() {
   const query = `
     query MyQuery {
-      testimonials {
+      testimonials(first: 20) {
         name
         star
         description
