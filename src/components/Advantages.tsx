@@ -13,47 +13,51 @@ import { Advantage } from "@/components/Advantage"
 
 export function Advantages() {
   return (
-    <section className="bg-second">
-      <div className="max-w-7xl mx-auto py-16">
-        <h1 className="text-5xl font-bold uppercase text-main text-center">
+    <section className="w-full h-[764px] relative">
+      <video autoPlay muted loop className="absolute w-full h-full object-cover">
+        <source src="colosseum.mp4" type="video/mp4" />
+      </video>
+      <div className="absolute w-full h-full bg-black opacity-50" />
+      <div className="max-w-7xl w-full absolute z-10 left-[50%] translate-x-[-50%] py-16">
+        <h1 className="text-5xl font-bold uppercase text-white text-center">
           Vantagens do Passaporte Europeu
         </h1>
 
-        <div className="mt-12 sm:mt-24 grid grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-24 px-4 xl:px-0">
+        <div className="mt-12 sm:mt-24 grid grid-cols-3 gap-8 lg:gap-24 px-4 xl:px-0">
           <Advantage
-            icon={<BsFillHouseFill className="w-12 h-12 text-main" />}
+            icon={<BsFillHouseFill className="w-8 sm:w-12 h-8 sm:h-12 text-white" />}
             title="Residir na Europa"
           />
           <Advantage
-            icon={<BsBriefcaseFill className="w-12 h-12 text-main" />}
+            icon={<BsBriefcaseFill className="w-8 sm:w-12 h-8 sm:h-12 text-white" />}
             title="Trabalhar na Europa"
           />
           <Advantage
-            icon={<BsBookHalf className="w-12 h-12 text-main" />}
+            icon={<BsBookHalf className="w-8 sm:w-12 h-8 sm:h-12 text-white" />}
             title="Estudar na Europa"
           />
           <Advantage
-            icon={<BsFillPinMapFill className="w-12 h-12 text-main" />}
+            icon={<BsFillPinMapFill className="w-8 sm:w-12 h-8 sm:h-12 text-white" />}
             title="Livre Circulação"
           />
           <Advantage
-            icon={<BsFillAirplaneFill className="w-12 h-12 text-main" />}
+            icon={<BsFillAirplaneFill className="w-8 sm:w-12 h-8 sm:h-12 text-white" />}
             title="Intercâmbio"
           />
           <Advantage
-            icon={<BsFillFlagFill className="w-12 h-12 text-main" />}
+            icon={<BsFillFlagFill className="w-8 sm:w-12 h-8 sm:h-12 text-white" />}
             title="Cidadão Europeu"
           />
           <Advantage
-            icon={<BsGlobe className="w-12 h-12 text-main" />}
+            icon={<BsGlobe className="w-8 sm:w-12 h-8 sm:h-12 text-white" />}
             title="Fila Especial"
           />
           <Advantage
-            icon={<BsFillHandThumbsUpFill className="w-12 h-12 text-main" />}
+            icon={<BsFillHandThumbsUpFill className="w-8 sm:w-12 h-8 sm:h-12 text-white" />}
             title="Repassar Cidadania"
           />
           <Advantage
-            icon={<BsFillTrophyFill className="w-12 h-12 text-main" />}
+            icon={<BsFillTrophyFill className="w-8 sm:w-12 h-8 sm:h-12 text-white" />}
             title="Qualidade de Vida"
           />
         </div>
