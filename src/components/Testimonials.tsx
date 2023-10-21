@@ -24,7 +24,7 @@ export function Testimonials({ testimonials }: Props) {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 5000,
     arrows: true,
     rows: 2,
@@ -59,7 +59,7 @@ export function Testimonials({ testimonials }: Props) {
           no Google Maps
         </p>
 
-        <Slider {...settings} className="mt-12 grid grid-cols-2 gap-4 md:gap-12 px-4 xl:px-0">            
+        <Slider {...settings} className="mt-12 px-4 xl:px-0">            
           {testimonials.map((testimonial: Testimonial) => (
             <div key={testimonial.name} className="p-6">
               <Testimonial testimonial={testimonial} />
