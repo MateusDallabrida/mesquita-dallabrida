@@ -1,5 +1,7 @@
 import { MdLocationOn, MdPhone, MdAttachEmail } from "react-icons/md"
 import { BsInstagram, BsWhatsapp, BsYoutube } from 'react-icons/bs'
+import { Zen_Antique } from 'next/font/google'
+const zenAntique = Zen_Antique({ subsets: ['latin'], weight: '400' })
 
 interface Footer {
   address: string
@@ -14,7 +16,10 @@ interface Props {
 export function Footer({ footer }: Props) {
   return (
     <footer className="bg-main" id="contact">
-      <div className="max-w-7xl mx-auto pt-16 grid md:grid-cols-2 gap-12 px-4 xl:px-0">
+      <h1 className={`${zenAntique.className} text-4xl text-white text-center pt-6`}>
+        M|D
+      </h1>
+      <div className="max-w-7xl mx-auto pt-6 grid md:grid-cols-2 gap-12 px-4 xl:px-0">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.437361867125!2d-9.202114023589829!3d38.75367155517112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ecd28ecbb3195%3A0x249c855d05306fc!2sR.%20Dr.%20Jo%C3%A3o%20de%20Barros%2015%2C%201500-206%20Lisboa%2C%20Portugal!5e0!3m2!1spt-BR!2sbr!4v1697324594503!5m2!1spt-BR!2sbr"
           className="w-full h-[362px] rounded-lg border-0"
