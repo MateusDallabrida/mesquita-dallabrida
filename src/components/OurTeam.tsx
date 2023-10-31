@@ -18,11 +18,11 @@ export function OurTeam({ ourTeams }: Props) {
   return (
     <section className="bg-second">
       <div className="max-w-7xl mx-auto py-16">
-        <h2 className="text-5xl font-bold uppercase text-main text-center">
+        <h2 className="text-4xl sm:text-5xl font-bold uppercase text-main text-center">
           Nossa Equipe
         </h2>
 
-        <div className="mt-12 md:grid grid-cols-2 gap-12">
+        <div className="mt-8 sm:mt-12 md:grid grid-cols-2 gap-12">
           {ourTeams.map((person: Person) => (
             <div key={person.name} className="flex flex-col gap-6 items-center">
               <Image
@@ -31,26 +31,26 @@ export function OurTeam({ ourTeams }: Props) {
                 width={0}
                 height={0}
                 sizes="100vw"
-                className="w-32 h-32 rounded-full bg-white"
+                className="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-white"
               />
 
               <div>
-                <strong className="text-2xl font-bold text-main uppercase">
+                <strong className="text-xl sm:text-2xl font-bold text-main uppercase">
                   {person.name}
                 </strong>
-                <p className="text-gray-900 uppercase text-center mt-2">
+                <p className="text-sm sm:text-base text-gray-900 uppercase text-center mt-2">
                   {person.caption}
                 </p>
               </div>
 
               <div className="flex flex-col items-center gap-2">
                 <MdLocationOn className="w-8 h-8 text-main" />
-                <p className="text-main font-bold uppercase">
+                <p className="text-sm sm:text-base text-main font-bold uppercase">
                   Portugal
                 </p>
               </div>
 
-              <p className="text-lg text-gray-900 leading-8 text-justify px-8">
+              <p className="text-base sm:text-lg text-gray-900 leading-8 text-justify px-8">
                 {person.description}
               </p>
             </div>

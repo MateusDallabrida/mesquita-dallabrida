@@ -18,7 +18,7 @@ export function FAQ({ faqs }: Props) {
           <p className="text-xl text-gray-900 font-bold">
             FAQ
           </p>
-          <p className="text-4xl text-gray-900 font-bold">
+          <p className="text-3xl sm:text-4xl text-gray-900 font-bold">
             Perguntas frequentes dos nossos clientes.
           </p>
           <p className="text-gray-900">

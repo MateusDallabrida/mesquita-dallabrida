@@ -17,12 +17,12 @@ export function OurServices({ services }: Props) {
   return (
     <section id="services">
       <div className="max-w-7xl mx-auto py-16">
-        <h1 className="text-5xl font-bold text-main uppercase text-center">
+        <h1 className="text-4xl sm:text-5xl font-bold text-main uppercase text-center">
           Nossos Serviços
         </h1>
         
         {/* Horizontal Services */}
-        <div className="grid md:grid-cols-2 gap-12 mt-12 px-4 xl:px-0">
+        <div className="grid md:grid-cols-2 gap-12 mt-6 sm:mt-12 px-4 xl:px-0">
           {services
             .filter(service => service.highlight === true)
             .map((service: Service) => (

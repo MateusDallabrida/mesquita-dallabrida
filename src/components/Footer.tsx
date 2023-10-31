@@ -28,7 +28,7 @@ export function Footer({ footer }: Props) {
           referrerPolicy="no-referrer-when-downgrade"
         />
         <div>
-          <h3 className="text-3xl text-white font-bold mb-3">
+          <h3 className="text-2xl sm:text-3xl text-white font-bold mb-3">
             Redes Sociais
           </h3>
           <div className='flex items-center gap-3 md:gap-6 mb-6'>
@@ -42,30 +42,30 @@ export function Footer({ footer }: Props) {
               <BsYoutube className="w-5 h-5 text-white" />
             </a>
           </div>
-          <h3 className="text-3xl text-white font-bold mb-3">
+          <h3 className="text-2xl sm:text-3xl text-white font-bold mb-3">
             Endereço
           </h3>
-          <p className="flex gap-2 items-center text-white mb-6">
+          <p className="text-sm sm:text-base flex gap-2 items-center text-white mb-6">
             <MdLocationOn className="w-5 h-5" />
             {footer.address}
           </p>
-          <h3 className="text-3xl text-white font-bold mb-3">
+          <h3 className="text-2xl sm:text-3xl text-white font-bold mb-3">
             Telefone
           </h3>
-          <p className="flex gap-2 items-center text-white mb-6">
+          <p className="text-sm sm:text-base flex gap-2 items-center text-white mb-6">
             <MdPhone className="w-5 h-5" />
             {footer.phone}
           </p>
-          <h3 className="text-3xl text-white font-bold mb-3">
+          <h3 className="text-2xl sm:text-3xl text-white font-bold mb-3">
             E-mail
           </h3>
-          <p className="flex gap-2 items-center text-white">
+          <p className="text-sm sm:text-base flex gap-2 items-center text-white">
             <MdAttachEmail className="w-5 h-5" />
             {footer.email}
           </p>
         </div>
       </div>
-      <p className="text-center text-white py-6">
+      <p className="text-sm sm:text-base text-center text-white py-6">
         © 2023 Mesquita & Dallabrida. Todos os Direitos Reservados | Desenvolvido por
         <a
           href="https://www.linkedin.com/in/joaovitorcode/"

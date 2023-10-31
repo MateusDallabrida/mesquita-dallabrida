@@ -35,11 +35,11 @@ export function OurBlog({ posts }: Props) {
   return (
     <section>
       <div className="max-w-7xl mx-auto py-16">
-        <h2 className="text-5xl font-bold uppercase text-main text-center">
+        <h2 className="text-4xl sm:text-5xl font-bold uppercase text-main text-center">
           Nosso Blog
         </h2>
 
-        <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-12 px-4 xl:px-0">
+        <div className="mt-6 sm:mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 px-4 xl:px-0">
           {handlePosts()}
         </div>
       </div>

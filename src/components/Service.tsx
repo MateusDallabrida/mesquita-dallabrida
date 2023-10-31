@@ -19,7 +19,7 @@ export function Service({ srcImage, altImage, title, phone }: Props) {
         sizes="100vw"
         className="w-full h-[400px] object-cover rounded-xl"
       />
-      <p className="w-full text-center px-4 text-white text-xl font-bold uppercase absolute bottom-20">
+      <p className="w-full text-center px-4 text-white text-lg sm:text-xl font-bold uppercase absolute bottom-20">
         {title}
       </p>
       <a

@@ -25,14 +25,14 @@ interface Props {
 export function Thumbnail({ post }: Props) {
   return (
     <Link href={`/blog/${post.slug}`} >
-      <article className="flex flex-col gap-4">
+      <article className="flex flex-col gap-3 sm:gap-4">
         <Image
           src={post.image.url}
           alt=""
           width={0}
           height={0}
           sizes="100vw"
-          className="w-full aspect-square bg-gray-100 rounded-xl object-cover"
+          className="w-full aspect-video bg-gray-100 rounded-xl object-cover"
         />
         <p className="text-sm uppercase text-main font-bold">
           {post.tag}

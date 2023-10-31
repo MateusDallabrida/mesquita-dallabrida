@@ -24,7 +24,7 @@ export function Testimonials({ testimonials }: Props) {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     arrows: true,
     rows: 2,
@@ -45,10 +45,10 @@ export function Testimonials({ testimonials }: Props) {
   return (
     <section className="bg-second">
       <div className="max-w-7xl mx-auto py-16">
-        <h2 className="text-5xl font-bold uppercase text-main text-center">
+        <h2 className="text-4xl sm:text-5xl font-bold uppercase text-main text-center">
           Depoimentos
         </h2>
-        <p className="text-center mt-4 text-gray-600 font-medium">
+        <p className="text-sm sm:text-base mx-4 text-center mt-4 text-gray-600 font-medium">
           Depoimentos extraídos de nosso
           <a
             className="mx-1 text-main underline underline-offset-2"
@@ -59,9 +59,9 @@ export function Testimonials({ testimonials }: Props) {
           no Google Negócios
         </p>
 
-        <Slider {...settings} className="mt-12 px-4 xl:px-0">            
+        <Slider {...settings} className="mt-6 sm:mt-12 px-4 xl:px-0">            
           {testimonials.map((testimonial: Testimonial) => (
-            <div key={testimonial.name} className="p-6">
+            <div key={testimonial.name} className="p-6 slider-item h-full flex">
               <Testimonial testimonial={testimonial} />
             </div>
           ))}

@@ -13,13 +13,13 @@ import { Advantage } from "@/components/Advantage"
 
 export function Advantages() {
   return (
-    <section className="w-full h-[764px] relative">
+    <section className="w-full h-[640px] sm:h-[764px] relative flex justify-center items-center">
       <video autoPlay muted loop className="absolute w-full h-full object-cover">
         <source src="colosseum.mp4" type="video/mp4" />
       </video>
       <div className="absolute w-full h-full bg-black opacity-50" />
-      <div className="max-w-7xl w-full absolute z-10 left-[50%] translate-x-[-50%] py-16">
-        <h1 className="text-5xl font-bold uppercase text-white text-center">
+      <div className="max-w-7xl w-full absolute z-10">
+        <h1 className="text-3xl sm:text-5xl font-bold uppercase text-white text-center">
           Vantagens do Passaporte Europeu
         </h1>
 

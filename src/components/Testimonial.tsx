@@ -29,7 +29,7 @@ export function Testimonial({ testimonial }: Props) {
   }
 
   return (
-    <div className="w-full bg-white rounded-xl p-6 flex flex-col gap-4">
+    <div className="w-full h-[352px] sm:h-auto bg-white rounded-xl p-6 flex flex-col gap-4">
       <div className="flex items-center gap-2">
         {testimonial.image?.url ? (
           <Image
@@ -48,7 +48,7 @@ export function Testimonial({ testimonial }: Props) {
         </p>
       </div>
 
-      <p className="text-justify">
+      <p className="text-base text-justify">
         {testimonial.description}
       </p>
 
