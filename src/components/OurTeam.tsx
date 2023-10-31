@@ -22,9 +22,9 @@ export function OurTeam({ ourTeams }: Props) {
           Nossa Equipe
         </h2>
 
-        <div className="mt-8 sm:mt-12 md:grid grid-cols-2 gap-12">
+        <div className="mt-8 sm:mt-12 md:grid grid-cols-2 flex flex-col gap-12">
           {ourTeams.map((person: Person) => (
-            <div key={person.name} className="flex flex-col gap-6 items-center">
+            <div key={person.name} className="flex flex-col gap-3 items-center">
               <Image
                 src={person.image.url}
                 alt="Foto de perfil do doutor Mateus Dallabrida"
@@ -34,14 +34,12 @@ export function OurTeam({ ourTeams }: Props) {
                 className="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-white"
               />
 
-              <div>
                 <strong className="text-xl sm:text-2xl font-bold text-main uppercase">
                   {person.name}
                 </strong>
-                <p className="text-sm sm:text-base text-gray-900 uppercase text-center mt-2">
+                <p className="text-sm sm:text-base text-gray-900 uppercase text-center">
                   {person.caption}
                 </p>
-              </div>
 
               <div className="flex flex-col items-center gap-2">
                 <MdLocationOn className="w-8 h-8 text-main" />

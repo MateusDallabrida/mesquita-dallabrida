@@ -14,8 +14,8 @@ import { Advantage } from "@/components/Advantage"
 export function Advantages() {
   return (
     <section className="w-full h-[640px] sm:h-[764px] relative flex justify-center items-center">
-      <video autoPlay muted loop className="absolute w-full h-full object-cover">
-        <source src="colosseum.mp4" type="video/mp4" />
+      <video preload="auto" playsInline autoPlay muted loop className="absolute w-full h-full object-cover">
+        <source src="rome.mp4" type="video/mp4" />
       </video>
       <div className="absolute w-full h-full bg-black opacity-50" />
       <div className="max-w-7xl w-full absolute z-10">

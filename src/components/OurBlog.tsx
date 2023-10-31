@@ -43,7 +43,7 @@ export function OurBlog({ posts }: Props) {
     const thumbnails: any = []
     for (let i = 0; i < 3; i++) {
       thumbnails.push(
-        <div key={posts[i].slug} className="px-6 xl:px-0">
+        <div key={posts[i].slug} className="px-10 xl:px-0">
           <Thumbnail post={posts[i]} />
         </div>
       )

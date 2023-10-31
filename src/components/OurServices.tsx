@@ -73,7 +73,7 @@ export function OurServices({ services }: Props) {
             {services
               .filter(service => service.highlight === false)
               .map((service: Service) => (
-                <div key={service.title} className="p-6">
+                <div key={service.title} className="p-10">
                   <Service
                     key={service.title}
                     srcImage={service.image.url}
