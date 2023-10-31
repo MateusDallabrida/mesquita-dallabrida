@@ -24,7 +24,7 @@ export function Testimonials({ testimonials }: Props) {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 5000,
     arrows: true,
     rows: 2,
@@ -61,7 +61,7 @@ export function Testimonials({ testimonials }: Props) {
 
         <Slider {...settings} className="mt-6 sm:mt-12 px-4 xl:px-0">            
           {testimonials.map((testimonial: Testimonial) => (
-            <div key={testimonial.name} className="p-6 slider-item h-full flex">
+            <div key={testimonial.name} className="p-6">
               <Testimonial testimonial={testimonial} />
             </div>
           ))}
