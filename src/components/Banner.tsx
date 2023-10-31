@@ -15,18 +15,20 @@ interface Props {
 export function Banner({ apresentation }: Props) {
 
   return (
-    <section className="h-[calc(100vh-64px)] sm:h-[calc(100vh-112px)] bg-second flex flex-col relative">
-      <div className="w-full h-full bg-black opacity-50 absolute" />
-      <video src={apresentation.video.url} autoPlay muted loop className="w-full h-full object-cover" />
-      <div className="absolute top-[calc(50%-236px)] left-[calc(50%-175px)] sm:left-[calc(50%-190px)] lg:left-[calc(50%-486px)] flex items-center flex-col lg:flex-row">
-        <h1 className={`${zenAntique.className} text-[128px] sm:text-[192px] lg:text-[256px] text-white`}>
+    <section className="relative w-full h-[calc(100vh-64px)] sm:h-[calc(100vh-112px)] flex flex-col justify-center items-center">
+      <div className="absolute w-full h-full bg-black opacity-50" />
+      <video autoPlay muted loop className="w-full h-full object-cover">
+        <source src={apresentation.video.url} type="video/mp4" />
+      </video>
+      <div className="absolute flex max-w-[420px] lg:max-w-[972px] gap-6 lg:gap-12 flex-col lg:flex-row items-center px-4 sm:px-0">
+        <h1 className={`${zenAntique.className} text-[128px] lg:text-[256px] text-white leading-none`}>
           M|D
         </h1>
-        <div className="lg:ml-12">
-          <p className="w-[350px] md:w-[380px] lg:w-[460px] text-white font-black text-lg md:text-xl lg:text-2xl leading-7 lg:leading-9">
+        <div>
+          <p className="text-white text-justify font-black text-md md:text-lg lg:text-2xl leading-6">
             {apresentation.heading}
           </p>
-          <p className="w-[350px] md:w-[380px] lg:w-[460px] text-white text-sm lg:text-base font-medium mt-4">
+          <p className="text-white text-sm lg:text-base font-medium mt-4">
             {apresentation.caption}
           </p>
           <div className="w-full flex justify-center lg:block">
