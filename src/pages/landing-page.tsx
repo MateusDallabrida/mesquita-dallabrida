@@ -6,6 +6,7 @@ import { MdFamilyRestroom, MdHouse, MdLocationPin, MdStar, MdQuestionMark } from
 import { GiBigDiamondRing } from "react-icons/gi"
 import { CardLP } from "@/components/CardLP"
 import { TopicLP } from "@/components/TopicLP"
+import { ChatLP } from "@/components/ChatLP"
 
 export default function LandingPage() {
   return (
@@ -163,6 +164,8 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      <ChatLP />
     </div>
   )
 }
