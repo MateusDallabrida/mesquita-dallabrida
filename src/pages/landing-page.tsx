@@ -21,18 +21,18 @@ export default function LandingPage() {
           className="absolute w-full h-full object-cover"
         />
 
-        <div className="relative max-w-5xl w-full mx-auto py-32">
-          <div className="w-[512px] flex flex-col gap-6">
-            <h2 className="text-3xl font-bold text-second">
+        <div className="relative max-w-5xl w-full mx-auto pt-32 pb-16 sm:py-32 px-4 lg:px-0">
+          <div className="max-w-[512px] flex flex-col gap-6">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-second mt-4 sm:mt-0">
               Obtenha a sua nacionalidade <span className="underline">Portuguesa</span> com a nossa ajuda!
             </h2>
-            <p className="text-second">
+            <p className="text-sm sm:text-base text-second">
               Se você quer obter sua cidadania portuguesa, nós estamos aqui para te ajudar.
             </p>
-            <p className="text-second">
+            <p className="text-sm sm:text-base text-second">
               Com anos de experiência e conhecimento profundo do processo, nós fornecemos serviços confiáveis e eficientes para te ajudar a tornar-se um cidadão português e consequentemente um cidadadão europeu.
             </p>
-            <p className="text-second font-bold">
+            <p className="text-sm sm:text-base text-second font-bold">
               Deixe-nos guiar você em cada etapa do processo.
             </p>
             <Link
@@ -65,11 +65,11 @@ export default function LandingPage() {
         />
         <div className="absolute w-full h-full bg-[#c7c3b0] opacity-80" />
 
-        <div className="relative max-w-5xl w-full mx-auto py-32">
-          <h2 className="text-4xl font-bold text-main text-center mb-6">
+        <div className="relative max-w-5xl w-full mx-auto py-16 sm:py-32 px-4 lg:px-0">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-main text-center mb-6">
             Descubra o sonho de ser um cidadão europeu!
           </h2>
-          <p className="text-2xl text-main text-center mb-6">
+          <p className="text-xl sm:text-2xl text-main text-center mb-6">
             Com a cidadania Portuguesa você poderá ter acesso a:
           </p>
 
@@ -116,15 +116,15 @@ export default function LandingPage() {
       </section>
 
       <section className="relative w-full bg-[#c7c3b0]">
-        <div className="relative max-w-5xl w-full mx-auto py-32">
-          <h2 className="text-4xl font-bold text-main text-center mb-6">
+        <div className="relative max-w-5xl w-full mx-auto py-16 sm:py-32 px-4 lg:px-0">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-main text-center mb-6">
             Quem pode requerer a nacionalidade Portuguesa?
           </h2>
-          <p className="text-2xl text-main text-center mb-6">
+          <p className="text-xl sm:text-2xl text-main text-center mb-6">
             Existem várias situações em que pode ser possível requerer a nacionalidade portuguesa.
           </p>
 
-          <div className="max-w-3xl w-full mx-auto grid grid-cols-2 gap-12">
+          <div className="max-w-3xl w-full mx-auto grid grid-cols-1 sm:grid-cols-2 gap-12">
             <CardLP props={{
               title: "Pessoas com ascendência portuguesa",
               icon: <MdFamilyRestroom className="w-12 h-12 text-second" />,
@@ -159,7 +159,7 @@ export default function LandingPage() {
               title: "Outras situações",
               icon: <MdQuestionMark className="w-12 h-12 text-second" />,
               description: "Há diversas outras questões que podem te garantir a cidadania portuguesa. Na dúvida consulte nossa equipe!",
-              custom: "col-span-2"
+              custom: "sm:col-span-2"
             }} />
           </div>
         </div>
