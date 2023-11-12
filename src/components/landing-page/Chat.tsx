@@ -1,6 +1,6 @@
 import { BsWhatsapp } from "react-icons/bs"
 
-export function ChatLP() {
+export function Chat() {
   return (
     <div className="fixed bottom-4 right-4 z-10">
       <a
