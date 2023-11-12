@@ -6,6 +6,7 @@ import { Section3 } from "@/components/landing-page/Section3"
 import { Section4 } from "@/components/landing-page/Section4"
 import { Chat } from "@/components/landing-page/Chat"
 import { Section5 } from "@/components/landing-page/Section5"
+import { Section6 } from "@/components/landing-page/Section6"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function LandingPage2() {
       <Section3 />
       <Section4 />
       <Section5 />
+      <Section6 />
       <Chat />
     </div>
   )
