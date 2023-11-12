@@ -114,6 +114,30 @@ export function Section6() {
             className="w-1/3 object-cover rounded-r-xl"
           />
         </div>
+        {/* Content 4 */}
+        <div className="rounded-xl flex">
+          <div className="w-full bg-main p-16 rounded-l-xl">
+            <h2 className="text-[45px] font-bold text-second leading-tight mb-6">
+              Esperamos ter esclarecido os serviços e valores do investimento
+            </h2>
+            <p className="text-second text-[27px] leading-tight mb-6">
+              Esperamos seu retorno para darmos andamento aos trabalhos. 
+            </p>
+            <p className="text-second text-[27px] leading-tight">
+              Atenciosamente,
+            </p>
+          </div>
+          <div className="w-full">
+            <Image
+              src="/landing-page/logo_2.png"
+              alt=""
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-full h-full rounded-r-xl"
+            />
+          </div>
+        </div>
       </div>
     </section>
   )

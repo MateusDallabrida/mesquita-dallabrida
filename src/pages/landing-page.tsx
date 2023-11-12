@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google'
+import Image from "next/image"
 
 import { Section1 } from "@/components/landing-page/Section1"
 import { Section2 } from "@/components/landing-page/Section2"
@@ -13,6 +14,14 @@ const inter = Inter({ subsets: ['latin'] })
 export default function LandingPage2() {
   return (
     <div className={inter.className}>
+      <Image
+        src="/landing-page/logo_2.png"
+        alt=""
+        height={0}
+        width={0}
+        sizes="100vw"
+        className="fixed left-4 bottom-4 w-24"
+      />
       <Section1 />
       <Section2 />
       <Section3 />
