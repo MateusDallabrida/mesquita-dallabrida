@@ -21,7 +21,7 @@ export function Section3() {
         </h2>
 
         {/* Timeline */}
-        <div className="relative flex flex-col items-start md:items-center space-y-[270px] md:space-y-[64px] px-16">
+        <div className="relative flex flex-col items-start md:items-center space-y-[270px] md:space-y-[64px] px-4 lg:px-16">
           <div className="absolute w-[6px] h-full bg-main mx-auto" />
           <Topic props={{
             topic: 1,

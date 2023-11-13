@@ -4,8 +4,8 @@ export function Section4() {
   return (
     <section className="w-full bg-main">
       {/* Container */}
-      <div className="max-w-5xl w-full mx-auto py-16 px-16">
-        <h2 className="text-[45px] text-second font-bold leading-tight mb-6">
+      <div className="max-w-5xl w-full mx-auto py-16 px-4 lg:px-16">
+        <h2 className="text-4xl lg:text-5xl text-second font-bold leading-tight mb-6">
           Por que escolher o nosso escritório para ajudá-lo em seu processo de cidadania portuguesa?
         </h2>
         <p className="text-lg text-second mb-6">

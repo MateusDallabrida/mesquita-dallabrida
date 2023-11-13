@@ -12,8 +12,8 @@ export function Section2() {
       {/* Container */}
       <div className="max-w-5xl mx-auto py-12">
         {/* Content 1 */}
-        <div className="bg-second rounded-xl pt-12 pb-64 px-16 mb-16">
-          <h2 className="text-[45px] font-bold text-main text-center leading-tight mb-12">
+        <div className="bg-second rounded-xl pt-12 pb-64 px-4 lg:px-16 mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-main text-center leading-tight mb-6 lg:mb-12">
             Descubra o sonho de ser um cidadão europeu!
           </h2>
           <Image
@@ -22,9 +22,9 @@ export function Section2() {
             height={0}
             width={0}
             sizes="100vw"
-            className="w-[100px] rounded-md mx-auto mb-12"
+            className="w-[100px] rounded-md mx-auto mb-6 lg:mb-12"
           />
-          <h2 className="text-[45px] font-bold text-main text-center leading-tight mb-12">
+          <h2 className="text-4xl lg:text-5xl font-bold text-main text-center leading-tight mb-6 lg:mb-12">
             Com a cidadania portuguesa você poderá ter acesso a:
           </h2>
 
@@ -105,7 +105,7 @@ export function Section2() {
         </div>
 
         {/* Content 2 */}
-        <div className="bg-second rounded-xl py-12 px-16">
+        <div className="bg-second rounded-xl py-12 px-4 lg:px-16">
           <h2 className="text-[45px] font-bold text-main text-center leading-tight mb-12">
             Quem pode requerer a nacionalidade portuguesa?
           </h2>

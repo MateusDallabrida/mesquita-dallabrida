@@ -20,7 +20,7 @@ export default function LandingPage2() {
         height={0}
         width={0}
         sizes="100vw"
-        className="fixed left-4 bottom-4 w-24 z-10"
+        className="fixed left-4 bottom-4 w-24 z-20"
       />
       <Section1 />
       <Section2 />

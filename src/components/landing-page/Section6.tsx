@@ -9,14 +9,14 @@ export function Section6() {
       {/* Container */}
       <div className="max-w-5xl mx-auto">
         {/* Content 1 */}
-        <div className="bg-main rounded-xl py-12 px-16 mb-16">
-          <h2 className="text-[45px] font-bold text-second mb-6">
+        <div className="bg-main rounded-xl py-12 px-4 lg:px-16 mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-second mb-6">
             Perguntas frequentes
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div>
-              <h3 className="text-[22px] font-bold text-second mb-4">
+              <h3 className="text-xl font-bold text-second mb-4">
                 Quanto tempo leva o processo?
               </h3>
               <p className="text-lg text-second">
@@ -24,7 +24,7 @@ export function Section6() {
               </p>
             </div>
             <div>
-              <h3 className="text-[22px] font-bold text-second mb-4">
+              <h3 className="text-xl font-bold text-second mb-4">
                 Quais são os documentos necessários?
               </h3>
               <p className="text-lg text-second">
@@ -32,7 +32,7 @@ export function Section6() {
               </p>
             </div>
             <div>
-              <h3 className="text-[22px] font-bold text-second mb-4">
+              <h3 className="text-xl font-bold text-second mb-4">
                 Eu preciso viajar para Portugal?
               </h3>
               <p className="text-lg text-second">
@@ -40,7 +40,7 @@ export function Section6() {
               </p>
             </div>
             <div>
-              <h3 className="text-[22px] font-bold text-second mb-4">
+              <h3 className="text-xl font-bold text-second mb-4">
                 Qual é a taxa de sucesso da solicitação?
               </h3>
               <p className="text-lg text-second">
@@ -59,8 +59,8 @@ export function Section6() {
             sizes="100vw"
             className="w-full h-[225px] object-cover rounded-t-xl"
           />
-          <div className="py-12 px-16">
-            <h2 className="text-[45px] font-bold text-main mb-6">
+          <div className="py-12 px-4 lg:px-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-main mb-6">
               INVESTIMENTO
             </h2>
             <h3 className="text-lg font-bold text-main mb-2">
@@ -100,8 +100,8 @@ export function Section6() {
         </div>
         {/* Content 3 */}
         <div className="bg-second rounded-xl mb-16 flex flex-col-reverse md:flex-row">
-          <div className="w-full py-24 px-16 bg-second rounded-bl-xl md:rounded-tl-xl rounded-br-xl md:rounded-br-none">
-            <h2 className="text-[45px] font-bold text-main leading-tight">
+          <div className="w-full py-12 lg:py-24 px-4 lg:px-16 bg-second rounded-bl-xl md:rounded-tl-xl rounded-br-xl md:rounded-br-none">
+            <h2 className="text-4xl lg:text-5xl font-bold text-main leading-tight">
               Contrate nossos serviços e realize o seu sonho de ser um cidadão português!
             </h2>
           </div>
@@ -116,8 +116,8 @@ export function Section6() {
         </div>
         {/* Content 4 */}
         <div className="flex flex-col-reverse md:flex-row">
-          <div className="w-full bg-main p-16 rounded-bl-xl md:rounded-tl-xl rounded-br-xl md:rounded-br-none">
-            <h2 className="text-[45px] font-bold text-second leading-tight mb-6">
+          <div className="w-full bg-main px-8 lg:px-16 py-8 lg:py-16 rounded-bl-xl md:rounded-tl-xl rounded-br-xl md:rounded-br-none">
+            <h2 className="text-4xl lg:text-5xl font-bold text-second leading-tight mb-6">
               Esperamos ter esclarecido os serviços e valores do investimento
             </h2>
             <p className="text-second text-[27px] leading-tight mb-6">

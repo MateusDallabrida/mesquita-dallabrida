@@ -7,8 +7,8 @@ export function Section5() {
       style={{ backgroundImage: "url('/landing-page/example_04.jpg')" }}
     >
       {/* Container */}
-      <div className="max-w-5xl mx-auto bg-second rounded-xl p-12">
-        <h2 className="text-[45px] font-bold text-main mb-6">
+      <div className="max-w-5xl mx-auto bg-second rounded-xl py-12 px-4 :px-12">
+        <h2 className="text-4xl lg:text-5xl font-bold text-main mb-6">
           Nossos serviços
         </h2>
         <p className="text-lg mb-6">
