@@ -29,7 +29,7 @@ export function Section2() {
           </h2>
 
           {/* Timeline */}
-          <div className="relative flex flex-col items-center space-y-[224px]">
+          <div className="relative flex flex-col items-start md:items-center space-y-[512px] md:space-y-[224px]">
             <div className="absolute w-[6px] h-full bg-main mx-auto" />
             <Topic props={{
               topic: 1,
@@ -122,7 +122,7 @@ export function Section2() {
           </p>
           
           {/* Cards */}
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card props={{
               title: "Pessoas com ascendência portuguesa",
               description: "Se você tiver pais ou avós portugueses, poderá ter direito à nacionalidade portuguesa."
@@ -150,7 +150,7 @@ export function Section2() {
             <Card props={{
               title: "Outras situações",
               description: "Há diversas outras questões que podem te garantir a cidadania portuguesa, na dúvida consulte nossa equipe!",
-              custom: "col-span-2"
+              custom: "col-span-1 md:col-span-2"
             }} />
           </div>
         </div>

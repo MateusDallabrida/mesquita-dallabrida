@@ -19,12 +19,12 @@ export function Topic({ props }: Props) {
   const [isLeft] = useState(props.orientation === "left" ? false : true)
 
   return (
-    <div className="relative w-10 h-10 bg-main rounded-md z-10">
-      <p className="text-[27px] font-bold text-second text-center">
+    <div className="relative right-4 md:right-0 bottom-[270px] md:bottom-[64px] w-10 h-10 bg-main rounded-md z-10">
+      <p className={`text-[27px] font-bold text-second text-center`}>
         {props.topic}
       </p>
-      <div className={`absolute ${isLeft ? "left-10" : "right-10"} top-1/2 -translate-y-1/2 w-[96px] h-[6px] bg-main`} />
-      <span className={`${props.custom} absolute ${isLeft ? "left-[160px] text-left" : "right-[160px] text-right"} w-[300px] text-xl`}>
+      <div className={`absolute ${isLeft ? "left-10" : "-right-6 md:right-10"} top-1/2 -translate-y-1/2 w-[24px] lg:w-[96px] h-[6px] bg-main`} />
+      <span className={`${props.custom} absolute ${isLeft ? "left-[80px] lg:left-[160px] text-left" : "right-[-340px] md:right-[80px] lg:right-[160px] text-left md:text-right"} w-[300px] text-base md:text-lg lg:text-xl`}>
         {props.title && <div className="text-[22px] font-bold text-main mb-4">
           {props.title}
         </div>}

@@ -15,7 +15,7 @@ export function Section5() {
           Nós oferecemos serviços completos para a solicitação da sua cidadania, desde a análise dos documentos necessários até o fim do processo com a obtenção da nacionalidade portuguesa.
         </p>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Card props={{
             title: "Assessoria",
             description: "Oferecemos suporte durante todo o processo de solicitação de nacionalidade."
@@ -35,7 +35,7 @@ export function Section5() {
           <Card props={{
             title: "O investimento a ser realizado incluem todos os serviços necessários para a obtenção da cidadania portuguesa!",
             description: "",
-            custom: "col-span-2"
+            custom: "col-span-1 md:col-span-2"
           }} />
         </div>
       </div>

@@ -14,7 +14,7 @@ export function Section6() {
             Perguntas frequentes
           </h2>
 
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div>
               <h3 className="text-[22px] font-bold text-second mb-4">
                 Quanto tempo leva o processo?
@@ -99,24 +99,24 @@ export function Section6() {
           </div>
         </div>
         {/* Content 3 */}
-        <div className="bg-second rounded-xl mb-16 flex">
-          <div className="w-full py-24 px-16 bg-second rounded-l-xl">
+        <div className="bg-second rounded-xl mb-16 flex flex-col-reverse md:flex-row">
+          <div className="w-full py-24 px-16 bg-second rounded-bl-xl md:rounded-tl-xl rounded-br-xl md:rounded-br-none">
             <h2 className="text-[45px] font-bold text-main leading-tight">
               Contrate nossos serviços e realize o seu sonho de ser um cidadão português!
             </h2>
           </div>
           <Image
-            src="/landing-page/example_13.jpg"
+            src="/landing-page/example_14.jpg"
             alt=""
             height={0}
             width={0}
             sizes="100vw"
-            className="w-1/3 object-cover rounded-r-xl"
+            className="w-full md:w-1/3 h-[256px] md:h-auto object-cover rounded-tl-xl md:rounded-tl-none rounded-tr-xl md:rounded-br-xl"
           />
         </div>
         {/* Content 4 */}
-        <div className="rounded-xl flex">
-          <div className="w-full bg-main p-16 rounded-l-xl">
+        <div className="flex flex-col-reverse md:flex-row">
+          <div className="w-full bg-main p-16 rounded-bl-xl md:rounded-tl-xl rounded-br-xl md:rounded-br-none">
             <h2 className="text-[45px] font-bold text-second leading-tight mb-6">
               Esperamos ter esclarecido os serviços e valores do investimento
             </h2>
@@ -127,16 +127,14 @@ export function Section6() {
               Atenciosamente,
             </p>
           </div>
-          <div className="w-full">
-            <Image
-              src="/landing-page/logo_2.png"
-              alt=""
-              height={0}
-              width={0}
-              sizes="100vw"
-              className="w-full h-full rounded-r-xl"
-            />
-          </div>
+          <Image
+            src="/landing-page/logo_2.png"
+            alt=""
+            height={0}
+            width={0}
+            sizes="100vw"
+            className="w-full md:w-1/3 h-[350px] md:h-auto rounded-tl-xl md:rounded-tl-none rounded-tr-xl md:rounded-br-xl object-cover"
+          />
         </div>
       </div>
     </section>

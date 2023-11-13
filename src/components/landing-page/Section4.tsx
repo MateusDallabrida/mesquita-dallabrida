@@ -12,7 +12,7 @@ export function Section4() {
           Nós realizamos o processo de solicitação de nacionalidade portuguesa desde o início até a conclusão do processo.
         </p>
 
-        <div className="grid grid-cols-2 gap-x-24 gap-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-6">
           <Card2 props={{
             title: "Atendimento personalizado",
             description: "Nós entendemos que cada cliente tem necessidades e situações diferentes. Oferecemos atendimento personalizado para cada solicitação de nacionalidade.",
