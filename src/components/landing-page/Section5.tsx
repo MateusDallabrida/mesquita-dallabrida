@@ -4,7 +4,7 @@ export function Section5() {
   return (
     <section
       className="bg-fixed bg-cover bg-center h-full py-32"
-      style={{ backgroundImage: "url('/landing-page/example_04.jpg')" }}
+      style={{ backgroundImage: "url('/landing-page/example_16.jpg')" }}
     >
       {/* Container */}
       <div className="max-w-5xl mx-auto bg-second rounded-xl py-12 px-4 :px-12">

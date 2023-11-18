@@ -3,8 +3,8 @@ import Image from "next/image"
 export function Section1() {
   return (
     <section
-      className="bg-fixed bg-cover bg-center h-full"
-      style={{ backgroundImage: "url('/landing-page/example_08.jpg')" }}
+      className="bg-fixed bg-top h-full"
+      style={{ backgroundImage: "url('/landing-page/example_15.webp')" }}
     >
       {/* Container */}
       <div className="max-w-5xl mx-auto px-4 lg:px-16 pb-32">
