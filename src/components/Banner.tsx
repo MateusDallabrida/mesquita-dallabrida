@@ -1,5 +1,4 @@
-import { Zen_Antique } from 'next/font/google'
-const zenAntique = Zen_Antique({ subsets: ['latin'], weight: '400' })
+import Image from 'next/image'
 
 interface Props {
   apresentation: {
@@ -20,9 +19,15 @@ export function Banner({ apresentation }: Props) {
         <source src={apresentation.video.url} type="video/mp4" />
       </video>
       <div className="absolute flex max-w-[420px] lg:max-w-[972px] gap-6 lg:gap-12 flex-col lg:flex-row items-center px-4 sm:px-0">
-        <h1 className={`${zenAntique.className} text-[128px] lg:text-[256px] text-white leading-none`}>
-          M|D
-        </h1>
+        <Image
+          alt="Logotipo da Mesquita e Dallabrida"
+          src="/Logo_Branca_sem-fundo.png"
+          width={0}
+          height={0}
+          sizes="100vw"
+          priority
+          className="w-[460px]"
+        />
         <div>
           <p className="text-white text-justify font-black text-md md:text-lg lg:text-2xl leading-6">
             {apresentation.heading}

@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { MdMenu } from 'react-icons/md'
 import Link from 'next/link'
-import { Zen_Antique } from 'next/font/google'
-const zenAntique = Zen_Antique({ subsets: ['latin'], weight: '400' })
+import Image from 'next/image'
 
 import { DropdownMenu } from "@/components/DropdownMenu"
 import { AccordeonMenu } from "@/components/AccordeonMenu"
@@ -12,10 +11,19 @@ export function Header() {
 
   return (
     <header className="w-full bg-main text-white fixed sm:sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 xl:px-0 py-3 flex justify-between">
-        <h1 className={`${zenAntique.className} text-4xl`}>
-          M|D
-        </h1>
+      <div className="relative max-w-7xl mx-auto px-4 xl:px-0 py-6 flex justify-end">
+        <Link href="/">          
+          <div className="w-36 md:w-48 h-24 md:h-28 rounded-b-3xl bg-white top-0 left-4 xl:left-0 absolute z-10 flex justify-center items-center p-4 shadow-lg">
+            <Image
+              alt="Logotipo da Mesquita e Dallabrida"
+              src="/Logo_Horizontal_Bordo.png"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-48"
+            />
+          </div>
+        </Link>
 
         <nav className='hidden sm:flex gap-8 items-center font-medium'>
           <Link
