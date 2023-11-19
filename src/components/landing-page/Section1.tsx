@@ -3,11 +3,18 @@ import Image from "next/image"
 export function Section1() {
   return (
     <section
-      className="bg-fixed bg-top h-full"
-      style={{ backgroundImage: "url('/landing-page/example_15.webp')" }}
-    >
+      className="relative">
+      <Image
+        src="/landing-page/example_15.webp"
+        alt=""
+        height={0}
+        width={0}
+        sizes="100vw"
+        className="absolute w-full h-full"
+      />
+      <div className="absolute w-full h-full bg-black opacity-50" />
       {/* Container */}
-      <div className="max-w-5xl mx-auto px-4 lg:px-16 pb-32">
+      <div className="relative max-w-5xl mx-auto px-4 lg:px-16 pb-32">
         {/* Content 1 */}
         <div className="h-screen flex flex-col items-center justify-center gap-6">
           <h2 className="text-4xl lg:text-5xl font-bold text-second text-center leading-tight">
