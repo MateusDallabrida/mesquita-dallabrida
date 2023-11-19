@@ -4,6 +4,9 @@ import Link from 'next/link'
 import { Zen_Antique } from 'next/font/google'
 const zenAntique = Zen_Antique({ subsets: ['latin'], weight: '400' })
 
+import { DropdownMenu } from "@/components/DropdownMenu"
+import { AccordeonMenu } from "@/components/AccordeonMenu"
+
 export function Header() {
   const [show, setShow] = useState(false)
 
@@ -19,9 +22,18 @@ export function Header() {
             href="/" className="hover:underline underline-offset-4 font-bold">
             Início
           </Link>
-          <Link href="/#services" className="hover:underline underline-offset-4 font-bold">
-            Serviços
-          </Link>
+          <DropdownMenu
+            menu={{
+              value: "Serviços",
+              href: "/services"
+            }}
+            items={[
+              { value: "Busca por Certidões", href: "/busca-por-certidoes" },
+              { value: "Vistos", href: "/vistos" },
+              { value: "Cidadania Italiana", href: "/cidadania-italiana" },
+              { value: "Cidadania Portuguesa", href: "/cidadania-portuguesa" },
+            ]}
+          />
           <Link href="/#about-us" className="hover:underline underline-offset-4 font-bold">
             Sobre Nós
           </Link>
@@ -43,10 +55,16 @@ export function Header() {
             href="/" className="w-full py-6 px-8 font-medium text-main bg-second">
             Início
           </Link>
-          <Link
-            href="/#services" className="w-full py-6 px-8 font-medium text-gray-900 hover:bg-second">
-            Serviços
-          </Link>
+          <AccordeonMenu
+            onClick={() => setShow(prev => !prev)}
+            menu="Serviços"
+            items={[
+              { value: "Busca por Certidões", href: "/busca-por-certidoes" },
+              { value: "Vistos", href: "/vistos" },
+              { value: "Cidadania Italiana", href: "/cidadania-italiana" },
+              { value: "Cidadania Portuguesa", href: "/cidadania-portuguesa" },
+            ]}
+          />
           <Link
             href="/#about-us" className="w-full py-6 px-8 font-medium text-gray-900 hover:bg-second">
             Sobre Nós
