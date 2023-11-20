@@ -33,7 +33,7 @@ export function Header() {
           <DropdownMenu
             menu={{
               value: "Serviços",
-              href: "/services"
+              href: "/busca-por-certidoes"
             }}
             items={[
               { value: "Busca por Certidões", href: "/busca-por-certidoes" },

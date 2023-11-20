@@ -5,13 +5,12 @@ export function Section3() {
   return (
     <section className="bg-second">
       <div className="flex flex-col gap-6 max-w-6xl mx-auto py-16 px-4 lg:px-0">
-        <h2 className="text-3xl md:text-4xl font-bold text-main text-center mb-0">
-          O reconhecimento da sua cidadania italiana, não precisa ser difícil.
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-main">
+          O seu processo de nacionalidade não precisa ser difícil.
         </h2>
         <p className="text-lg text-center">
-          Damos todo o auxílio necessário para um processo descomplicado e sem dores de cabeça.
+          Entenda qual é a nossa parte, o passo a passo de tudo que vamos acompanhar e fazer por você.
         </p>
-        
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-16 mt-8">
           <Highlight
             icon={<MdSearch className="w-12 h-12 text-main absolute top-[calc(50%-24px)] left-[calc(50%-24px)]" />}
@@ -40,6 +39,7 @@ export function Section3() {
           />
         </div>
       </div>
+
     </section>
   )
 }
