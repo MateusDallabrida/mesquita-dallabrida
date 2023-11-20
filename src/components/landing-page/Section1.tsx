@@ -24,7 +24,7 @@ export function Section1() {
             Proposta de investimento para obtenção da Cidadania Portuguesa!
           </p>
           <Image
-            src="/landing-page/example_02.png"
+            src="/portugal_flag.png"
             alt=""
             height={0}
             width={0}

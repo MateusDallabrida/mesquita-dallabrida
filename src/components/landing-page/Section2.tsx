@@ -110,7 +110,7 @@ export function Section2() {
             Quem pode requerer a nacionalidade portuguesa?
           </h2>
           <Image
-            src="/landing-page/example_02.png"
+            src="/portugal_flag.png"
             alt=""
             height={0}
             width={0}
