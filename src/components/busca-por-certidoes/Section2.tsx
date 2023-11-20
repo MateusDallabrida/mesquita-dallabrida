@@ -2,7 +2,7 @@ export function Section2() {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 max-w-6xl mx-auto py-16 px-4 lg:px-0">
       <div>
-        <h2 className="text-5xl font-bold text-main mb-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-main mb-8">
           Itália
         </h2>
         <p className="text-lg mb-4">

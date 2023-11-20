@@ -5,13 +5,10 @@ export function Section1() {
     <section className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto py-16 px-4 lg:px-0">
       <div>
         <h2 className="text-4xl md:text-5xl font-bold text-main mb-8">
-          Busca por Certidões
+          Te ajudamos a viver o seu sonho europeu!
         </h2>
         <p className="text-lg mb-4">
-          Somos especializados em assessoria ao reconhecimento das Cidadanias Italiana e Portuguesa, diversos tipos de serviços consulares, e também realizamos o auxilio e a assessoria completa na obtenção de Vistos para diversos tipos de países.
-        </p>
-        <p className="text-lg">
-          Caso você não conheça o local exato de nascimento/batismo e casamento dos seus antepassados é necessário fazer a pesquisa do registro, ou seja, é preciso encontrar o livro onde o nascimento/ batismo e casamento foram registrados.
+          Damos todo o auxílio necessário para um processo descomplicado e sem dores de cabeça.
         </p>
         <a
           href={`https://api.whatsapp.com/send?phone=351939559818`}
@@ -24,11 +21,11 @@ export function Section1() {
       </div>
       <Image
         alt=""
-        src="/buscas.webp"
+        src="/roma.webp"
         width={0}
         height={0}
         sizes="100vw"
-        className="w-full rounded-md"
+        className="w-full h-[368px] object-cover object-top rounded-md"
       />
     </section>
   )

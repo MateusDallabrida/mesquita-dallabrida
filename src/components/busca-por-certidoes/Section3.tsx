@@ -5,7 +5,6 @@ import 'slick-carousel/slick/slick-theme.css'
 import { Testimonial } from '@/components/Testimonial'
 import { CustomPrevArrow, CustomNextArrow } from '@/components/CarouselCustoms'
 
-
 interface Testimonial {
   name: string
   star: number
@@ -44,10 +43,10 @@ export function Section3({ testimonials }: Props) {
   }
 
   return (
-    <div className="w-full bg-second">
+    <section className="w-full bg-second">
       <div className="max-w-6xl mx-auto py-16 px-4 lg:px-0 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
         <div>
-          <h2 className="text-5xl font-bold text-main mb-8">
+          <h2 className="text-4xl md:text-5xl font-bold text-main mb-8">
             Portugal
           </h2>
           <p className="text-lg mb-4">
@@ -104,6 +103,6 @@ export function Section3({ testimonials }: Props) {
           ))}
         </Slider>
       </div>
-    </div>
+    </section>
   )
 }
