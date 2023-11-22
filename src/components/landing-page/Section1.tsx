@@ -12,25 +12,36 @@ export function Section1() {
         sizes="100vw"
         className="absolute w-full h-full"
       />
-      <div className="absolute w-full h-full bg-black opacity-50" />
+      <div className="absolute w-full h-full bg-[#343f2c] opacity-50" />
       {/* Container */}
       <div className="relative max-w-5xl mx-auto px-4 lg:px-16 pb-32">
         {/* Content 1 */}
-        <div className="h-screen flex flex-col items-center justify-center gap-6">
-          <h2 className="text-4xl lg:text-5xl font-bold text-second text-center leading-tight">
-            Obtenha a sua <span className="underline">nacionalidade Portuguesa</span> com a nossa ajuda!
-          </h2>
-          <p className="text-3xl lg:text-4xl font-medium text-second text-center">
-            Proposta de investimento para obtenção da Cidadania Portuguesa!
-          </p>
+        <div className="h-screen flex flex-col md:flex-row items-center justify-center gap-6">
           <Image
-            src="/portugal_flag.png"
-            alt=""
-            height={0}
+            alt="Logotipo da Mesquita e Dallabrida"
+            src="/Logo_Branca_sem-fundo.png"
             width={0}
+            height={0}
             sizes="100vw"
-            className="w-40 h-40"
+            priority
+            className="w-[360px]"
           />
+          <div className="flex flex-col gap-4 items-center">
+            <h2 className="text-2xl lg:text-3xl font-bold text-second text-center leading-tight">
+              Obtenha a sua <span className="underline">nacionalidade Portuguesa</span> com a nossa ajuda!
+            </h2>
+            <p className="text-xl lg:text-2xl font-medium text-second text-center">
+              Proposta de investimento para obtenção da Cidadania Portuguesa!
+            </p>
+            <Image
+              src="/portugal_flag.png"
+              alt=""
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="w-40"
+            />
+          </div>
         </div>
         {/* Content 2 */}
         <div className="bg-second rounded-md p-4">

@@ -15,12 +15,12 @@ export default function LandingPage2() {
   return (
     <div className={inter.className}>
       <Image
-        src="/landing-page/logo_2.png"
-        alt=""
+        alt="Logotipo da Mesquita e Dallabrida"
+        src="/Logo_com-fundo_v2.jpg"
         height={0}
         width={0}
         sizes="100vw"
-        className="fixed left-4 bottom-4 w-24 z-20"
+        className="fixed left-4 top-4 w-24 sm:w-36 md:w-48 z-20 rounded-3xl"
       />
       <Section1 />
       <Section2 />

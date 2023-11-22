@@ -6,11 +6,12 @@ import { Card } from "@/components/landing-page/Card"
 export function Section2() {
   return (
     <section
-      className="bg-fixed bg-cover bg-center h-full"
+      className="relative bg-fixed bg-cover bg-center h-full"
       style={{ backgroundImage: "url('/landing-page/example_01.jpg')" }}
     >
+      <div className="absolute w-full h-full bg-second opacity-25" />
       {/* Container */}
-      <div className="max-w-5xl mx-auto py-12">
+      <div className="relative max-w-5xl mx-auto py-12">
         {/* Content 1 */}
         <div className="bg-second rounded-xl pt-12 pb-64 px-4 lg:px-16 mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-main text-center leading-tight mb-6 lg:mb-12">

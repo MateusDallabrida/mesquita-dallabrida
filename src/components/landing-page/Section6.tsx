@@ -104,6 +104,14 @@ export function Section6() {
             <h2 className="text-4xl lg:text-5xl font-bold text-main leading-tight">
               Contrate nossos serviços e realize o seu sonho de ser um cidadão português!
             </h2>
+            <a
+              href={`https://api.whatsapp.com/send?phone=351939559818`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-main text-white border border-main inline-block py-3 px-8 uppercase font-medium rounded mt-12 hover:bg-white hover:text-main transition-all"
+            >
+              Fale Conosco
+            </a>
           </div>
           <Image
             src="/landing-page/example_14.jpg"
@@ -128,7 +136,7 @@ export function Section6() {
             </p>
           </div>
           <Image
-            src="/landing-page/logo_2.png"
+            src="/Logo_com-fundo_v2.jpg"
             alt=""
             height={0}
             width={0}
