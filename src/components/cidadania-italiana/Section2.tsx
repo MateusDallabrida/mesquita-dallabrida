@@ -2,7 +2,7 @@ import { Acordeon } from "@/components/Acordeon"
 
 export function Section2() {
   return (
-    <section className="bg-second">
+    <section className="bg-white">
       <div className="flex flex-col gap-6 max-w-6xl mx-auto py-16 px-4 lg:px-0">
         <h2 className="text-3xl md:text-4xl font-bold text-main text-center mb-8">
           Quem tem direito?

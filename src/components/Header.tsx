@@ -60,7 +60,7 @@ export function Header() {
       <div className={`${show ? 'block' : 'hidden'} shadow-md`}>
         <nav className="flex flex-col bg-white">
           <Link
-            href="/" className="w-full py-6 px-8 font-medium text-main bg-second">
+            href="/" className="w-full py-6 px-8 font-medium text-gray-900 bg-second">
             Início
           </Link>
           <AccordeonMenu

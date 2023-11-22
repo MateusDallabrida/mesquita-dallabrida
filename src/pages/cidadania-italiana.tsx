@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 import Slider from "react-slick"
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -38,8 +40,8 @@ export default function CidadaniaItaliana({ data }: any) {
     autoplaySpeed: 5000,
     arrows: true,
     rows: 2,
-    prevArrow: <CustomPrevArrow />,
-    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow custom="text-white" />,
+    nextArrow: <CustomNextArrow custom="text-white" />,
     responsive: [
       {
         breakpoint: 768,
@@ -58,10 +60,19 @@ export default function CidadaniaItaliana({ data }: any) {
       <Header />
       <div className="relative sm:static top-[64px]">
         <Section1 />
-        <Section2 />
         <Section3 />
-        <div className="bg-second">
-          <div className="max-w-6xl mx-auto px-4 lg:px-0">
+        <Section2 />
+        <div className="relative">
+          <Image
+            src="/landing-page/example_01.jpg"
+            alt=""
+            height={0}
+            width={0}
+            sizes="100vw"
+            className="absolute w-full h-full object-cover"
+          />
+          <div className="absolute w-full h-full bg-[#5a1f24] opacity-40" />
+          <div className="max-w-6xl mx-auto p-12 px-4 lg:px-0">
             <Slider {...settings} className="px-4 xl:px-0">            
               {testimonials.map((testimonial: Testimonial) => (
                 <div key={testimonial.name} className="p-6">
