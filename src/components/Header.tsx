@@ -13,14 +13,14 @@ export function Header() {
     <header className="w-full bg-main text-white fixed sm:sticky top-0 z-50">
       <div className="relative max-w-7xl mx-auto px-4 xl:px-0 py-6 flex justify-end">
         <Link href="/">          
-          <div className="w-36 md:w-48 h-24 md:h-28 rounded-b-3xl bg-white top-0 left-4 xl:left-0 absolute z-10 flex justify-center items-center p-4 shadow-lg">
+          <div className="w-36 md:w-48 lg:w-60 h-24 md:h-28 lg:h-32 rounded-b-3xl bg-white top-0 left-4 xl:left-0 absolute z-10 flex justify-center items-center p-4 shadow-lg">
             <Image
               alt="Logotipo da Mesquita e Dallabrida"
               src="/Logo_Horizontal_Bordo.png"
               width={0}
               height={0}
               sizes="100vw"
-              className="w-48"
+              className="w-36 md:w-48 lg:w-60"
             />
           </div>
         </Link>
@@ -60,7 +60,7 @@ export function Header() {
       <div className={`${show ? 'block' : 'hidden'} shadow-md`}>
         <nav className="flex flex-col bg-white">
           <Link
-            href="/" className="w-full py-6 px-8 font-medium text-gray-900 bg-second">
+            href="/" className="w-full py-6 px-8 font-medium text-gray-900 hover:bg-second">
             Início
           </Link>
           <AccordeonMenu
