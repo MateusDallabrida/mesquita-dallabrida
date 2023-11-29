@@ -56,6 +56,8 @@ export default function VIstos({ data }: any) {
       <Header />
       <div className="relative sm:static top-[64px]">
         <Section1 />
+        <Section2 />
+        <AboutUs aboutUs={aboutUs} />
         <div className="bg-second">
           <div className="max-w-6xl mx-auto px-4 lg:px-0">
             <h2 className="text-4xl md:text-5xl font-bold text-center uppercase text-main pt-8">
@@ -79,8 +81,6 @@ export default function VIstos({ data }: any) {
             </Slider>
           </div>
         </div>
-        <AboutUs aboutUs={aboutUs} />
-        <Section2 />
         <Footer footer={footer} />
       </div>
     </>
