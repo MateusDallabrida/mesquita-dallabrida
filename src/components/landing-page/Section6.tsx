@@ -119,12 +119,12 @@ export function Section6() {
             height={0}
             width={0}
             sizes="100vw"
-            className="w-full md:w-2/5 h-[256px] md:h-auto object-cover rounded-tl-xl md:rounded-tl-none rounded-tr-xl md:rounded-br-xl"
+            className="w-full md:w-2/5 h-[256px] md:h-auto object-cover object-bottom rounded-tl-xl md:rounded-tl-none rounded-tr-xl md:rounded-br-xl"
           />
         </div>
         {/* Content 4 */}
-        <div className="flex flex-col-reverse md:flex-row">
-          <div className="w-full bg-main px-8 lg:px-16 py-8 lg:py-16 rounded-bl-xl md:rounded-tl-xl rounded-br-xl md:rounded-br-none">
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full bg-main px-8 lg:px-16 py-8 lg:py-16 rounded-tl-xl rounded-tr-xl md:rounded-tr-none md:rounded-bl-xl">
             <h2 className="text-2xl lg:text-3xl font-bold text-second leading-tight mb-6">
               Esperamos ter esclarecido os serviços e valores do investimento
             </h2>
@@ -141,7 +141,7 @@ export function Section6() {
             height={0}
             width={0}
             sizes="100vw"
-            className="w-full md:w-2/5 h-[350px] md:h-auto rounded-tl-xl md:rounded-tl-none rounded-tr-xl md:rounded-br-xl object-cover"
+            className="w-full md:w-2/5 h-[350px] md:h-auto object-cover rounded-bl-xl md:rounded-bl-none rounded-tl-xl md:rounded-tl-none rounded-tr-none md:rounded-tr-xl rounded-br-xl"
           />
         </div>
       </div>

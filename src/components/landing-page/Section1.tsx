@@ -10,11 +10,11 @@ export function Section1() {
         height={0}
         width={0}
         sizes="100vw"
-        className="absolute w-full h-full"
+        className="absolute w-full h-full object-cover object-left"
       />
       <div className="absolute w-full h-full bg-[#343f2c] opacity-60" />
       {/* Container */}
-      <div className="relative max-w-5xl mx-auto px-4 lg:px-16 pb-32">
+      <div className="relative max-w-5xl mx-auto px-4 lg:px-16 pb-4">
         {/* Content 1 */}
         <div className="h-screen flex flex-col md:flex-row items-center justify-center gap-12 md:gap-6">
           <Image
@@ -44,14 +44,14 @@ export function Section1() {
           </div>
         </div>
         {/* Content 2 */}
-        <div className="bg-second rounded-md p-4">
-          <p className="text-lg lg:text-xl font-bold text-main text-justify pb-6 lg:pb-12">
+        <div className="p-4">
+          <p className="text-base sm:text-lg font-bold text-second text-center pb-6">
             Se você quer obter sua cidadania portuguesa, nós estamos aqui para te ajudar.
           </p>
-          <p className="text-lg lg:text-xl font-bold text-main text-justify pb-6 lg:pb-12">
+          <p className="text-base sm:text-lg font-bold text-second text-center pb-6">
             Com anos de experiência e conhecimento profundo do processo, nós fornecemos serviços confiáveis e eficientes para te ajudar a tornar-se um cidadão português e consequentemente um cidadadão europeu. 
           </p>
-          <p className="text-lg lg:text-xl font-bold text-main text-justify">
+          <p className="text-base sm:text-lg font-bold text-second text-center">
             Deixe-nos guiar você em cada etapa do processo.
           </p>
         </div>

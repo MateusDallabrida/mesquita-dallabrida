@@ -31,7 +31,7 @@ export function AboutUs({ aboutUs }: Props) {
             <div className="absolute -left-4 -bottom-4 -z-10 w-full h-full rounded-tl-[64px] rounded-tr rounded-br-[64px] rounded-bl bg-main" />
           </div>
 
-          <div className="w-full">
+          <div className="w-full mt-12 md:mt-0">
             {aboutUs.description.split('\n\n').map((paragraph, index) => (
               <p key={index} className="text-base sm:text-lg lg:text-xl leading-7 lg:leading-8 text-gray-900 mt-4 sm:mt-6 lg:mt-12">
                 {paragraph}

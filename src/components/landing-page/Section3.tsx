@@ -21,7 +21,7 @@ export function Section3() {
         </h2>
 
         {/* Timeline */}
-        <div className="relative flex flex-col items-start md:items-center space-y-[270px] md:space-y-[64px] px-4 lg:px-16">
+        <div className="relative flex flex-col items-start md:items-center space-y-[240px] md:space-y-[64px] pl-8 lg:px-16">
           <div className="absolute w-[6px] h-full bg-main mx-auto" />
           <Topic props={{
             topic: 1,
@@ -33,7 +33,7 @@ export function Section3() {
           <Topic props={{
             topic: 2,
             title: "Levantamento e busca de documentação",
-            description: "É necessário realizar o levantamento e busca de toda a documentação necessária, a qual será analisada minuciosamente por nós assim que recebermos. Analisaremos cada caso de forma individual e personalizada, já que dependendo da situação, poderá ser necessário mais documentos e/ou procedimentos para garantir o sucesso durante todo o processo.",
+            description: "EAnalisaremos cada caso de forma individual e personalizada, já que dependendo da situação, poderá ser necessário mais documentos e/ou procedimentos para garantir o sucesso durante todo o processo.",
             orientation: "left",
             custom: "top-0"
           }} />

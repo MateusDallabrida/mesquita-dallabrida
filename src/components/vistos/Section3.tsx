@@ -20,7 +20,7 @@ interface Props {
   testimonials: Testimonial[]
 }
 
-export function Testimonials({ testimonials }: Props) {
+export function Section3({ testimonials }: Props) {
   const settings = {
     infinite: true,
     speed: 500,
@@ -45,7 +45,7 @@ export function Testimonials({ testimonials }: Props) {
   }
 
   return (
-    <section className="relative">
+    <div className="relative">
       <Image
         src="/landing-page/example_01.jpg"
         alt=""
@@ -76,6 +76,6 @@ export function Testimonials({ testimonials }: Props) {
           ))}
         </Slider>
       </div>
-    </section>
+    </div>
   )
 }
