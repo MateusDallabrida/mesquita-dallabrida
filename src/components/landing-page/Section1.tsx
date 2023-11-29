@@ -12,11 +12,11 @@ export function Section1() {
         sizes="100vw"
         className="absolute w-full h-full"
       />
-      <div className="absolute w-full h-full bg-[#343f2c] opacity-50" />
+      <div className="absolute w-full h-full bg-[#343f2c] opacity-75" />
       {/* Container */}
       <div className="relative max-w-5xl mx-auto px-4 lg:px-16 pb-32">
         {/* Content 1 */}
-        <div className="h-screen flex flex-col md:flex-row items-center justify-center gap-6">
+        <div className="h-screen flex flex-col md:flex-row items-center justify-center gap-12 md:gap-6">
           <Image
             alt="Logotipo da Mesquita e Dallabrida"
             src="/Logo_Branca_sem-fundo.png"
@@ -24,7 +24,7 @@ export function Section1() {
             height={0}
             sizes="100vw"
             priority
-            className="w-[360px]"
+            className="w-[436px]"
           />
           <div className="flex flex-col gap-4 items-center">
             <h2 className="text-2xl lg:text-3xl font-bold text-second text-center leading-tight">

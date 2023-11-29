@@ -1,4 +1,9 @@
 import Image from "next/image"
+import { MdHome, MdFlag } from 'react-icons/md'
+import { BsFillPeopleFill } from "react-icons/bs"
+import { RiParentFill } from "react-icons/ri"
+import { FaBaby, FaExclamationCircle } from "react-icons/fa"
+import { FaStarOfDavid } from "react-icons/fa6"
 
 import { Topic } from "@/components/landing-page/Topic"
 import { Card } from "@/components/landing-page/Card"
@@ -9,7 +14,7 @@ export function Section2() {
       className="relative bg-fixed bg-cover bg-center h-full"
       style={{ backgroundImage: "url('/landing-page/example_01.jpg')" }}
     >
-      <div className="absolute w-full h-full bg-second opacity-25" />
+      <div className="absolute w-full h-full bg-main opacity-75" />
       {/* Container */}
       <div className="relative max-w-5xl mx-auto py-12">
         {/* Content 1 */}
@@ -125,30 +130,37 @@ export function Section2() {
           {/* Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card props={{
+              icon: <MdFlag className="w-12 h-12 text-second" />,
               title: "Pessoas com ascendência portuguesa",
               description: "Se você tiver pais ou avós portugueses, poderá ter direito à nacionalidade portuguesa."
             }} />
             <Card props={{
+              icon: <MdHome className="w-12 h-12 text-second" />,
               title: "Residentes em Portugal",
               description: "Se você estiver morando em Portugal legalmente por um determinado período de tempo, dependendo das circunstâncias, poderá ter direito à nacionalidade portuguesa."
             }} />
             <Card props={{
+              icon: <BsFillPeopleFill className="w-12 h-12 text-second" />,
               title: "Cônjuges e parceiros de cidadãos portugueses",
               description: "Se você for casado(a) ou tiver união de fato com um cidadão português, poderá ter direito à nacionalidade portuguesa."
             }} />
             <Card props={{
+              icon: <RiParentFill className="w-12 h-12 text-second" />,
               title: "Pais de cidadãos portugueses",
               description: "Se você for ascendente de um cidadão português, poderá ter direito à nacionalidade portuguesa."
             }} />
             <Card props={{
+              icon: <FaBaby className="w-12 h-12 text-second" />,
               title: "Nascidos em território nacional",
               description: "Se você tiver filhos em Portugal, desde que cumprido alguns requisitos legais, saiba que seu filho poderá ser um cidadão português!"
             }} />
             <Card props={{
+              icon: <FaStarOfDavid className="w-12 h-12 text-second" />,
               title: "Descendentes de judeus sefarditas",
               description: "Se você for descendente de um cidadão português judeu sefardita, saiba que cumprido os requitos legais você poderá ter direito à nacionalidade portuguesa."
             }} />
             <Card props={{
+              icon: <FaExclamationCircle className="w-12 h-12 text-second" />,
               title: "Outras situações",
               description: "Há diversas outras questões que podem te garantir a cidadania portuguesa, na dúvida consulte nossa equipe!",
               custom: "col-span-1 md:col-span-2"

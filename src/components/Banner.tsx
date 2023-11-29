@@ -15,7 +15,7 @@ export function Banner({ apresentation }: Props) {
   return (
     <section className="relative w-full h-[calc(100vh-64px)] sm:h-[calc(100vh-112px)] flex flex-col justify-center items-center">
       <div className="absolute w-full h-full bg-black opacity-50" />
-      <video preload="auto" playsInline autoPlay muted loop className="w-full h-full object-cover">
+      <video preload="metadata" playsInline autoPlay muted loop className="w-full h-full object-cover">
         <source src={apresentation.video.url} type="video/mp4" />
       </video>
       <div className="absolute flex max-w-[420px] lg:max-w-[972px] gap-6 lg:gap-12 flex-col lg:flex-row items-center px-4 sm:px-0">

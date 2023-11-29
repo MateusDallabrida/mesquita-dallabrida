@@ -5,6 +5,7 @@ import { AboutUs } from '@/components/AboutUs'
 import { Section1 } from '@/components/busca-por-certidoes/Section1'
 import { Section2 } from '@/components/busca-por-certidoes/Section2'
 import { Section3 } from '@/components/busca-por-certidoes/Section3'
+import { Section4 } from '@/components/busca-por-certidoes/Section4'
 
 import { getFooter } from '@/utils/getFooter'
 import { getTestimonials } from '@/utils/getTestimonials'
@@ -21,7 +22,8 @@ export default function BuscaPorCertidoes({ data }: any) {
       <div className="relative sm:static top-[64px]">
         <Section1 />
         <Section2 />
-        <Section3 testimonials={testimonials} />
+        <Section3 />
+        <Section4 testimonials={testimonials} />
         <AboutUs aboutUs={aboutUs} />
         <Footer footer={footer} />
       </div>

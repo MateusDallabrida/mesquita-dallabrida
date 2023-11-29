@@ -119,7 +119,7 @@ export function Section6() {
             height={0}
             width={0}
             sizes="100vw"
-            className="w-full md:w-1/3 h-[256px] md:h-auto object-cover rounded-tl-xl md:rounded-tl-none rounded-tr-xl md:rounded-br-xl"
+            className="w-full md:w-2/5 h-[256px] md:h-auto object-cover rounded-tl-xl md:rounded-tl-none rounded-tr-xl md:rounded-br-xl"
           />
         </div>
         {/* Content 4 */}
@@ -141,7 +141,7 @@ export function Section6() {
             height={0}
             width={0}
             sizes="100vw"
-            className="w-full md:w-1/3 h-[350px] md:h-auto rounded-tl-xl md:rounded-tl-none rounded-tr-xl md:rounded-br-xl object-cover"
+            className="w-full md:w-2/5 h-[350px] md:h-auto rounded-tl-xl md:rounded-tl-none rounded-tr-xl md:rounded-br-xl object-cover"
           />
         </div>
       </div>

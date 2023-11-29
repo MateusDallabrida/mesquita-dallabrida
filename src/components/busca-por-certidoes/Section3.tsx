@@ -1,49 +1,6 @@
-import Slider from "react-slick"
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
-
-import { Testimonial } from '@/components/Testimonial'
-import { CustomPrevArrow, CustomNextArrow } from '@/components/CarouselCustoms'
-
-interface Testimonial {
-  name: string
-  star: number
-  description: string
-  image: {
-    url: string
-  }
-}
-
-interface Props {
-  testimonials: Testimonial[]
-}
-
-export function Section3({ testimonials }: Props) {
-  const settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    arrows: true,
-    rows: 2,
-    prevArrow: <CustomPrevArrow />,
-    nextArrow: <CustomNextArrow />,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          rows: 1,
-        }
-      }
-    ]
-  }
-
+export function Section3() {
   return (
-    <section className="w-full bg-second">
+    <section className="w-full">
       <div className="max-w-6xl mx-auto py-16 px-4 lg:px-0 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24">
         <div>
           <h2 className="text-4xl md:text-5xl font-bold text-main mb-8">
@@ -88,20 +45,11 @@ export function Section3({ testimonials }: Props) {
             href={`https://api.whatsapp.com/send?phone=351939559818`}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-main text-white inline-block py-3 px-8 uppercase font-medium rounded mt-4 hover:bg-white hover:text-main transition-all"
+            className="bg-main text-white border border-main inline-block py-3 px-8 uppercase font-medium rounded mt-4 hover:bg-white hover:text-main transition-all"
           >
             Fale Conosco
           </a>
         </div>
-      </div>
-      <div className="max-w-6xl mx-auto px-4 lg:px-0">
-        <Slider {...settings} className="px-4 xl:px-0">            
-          {testimonials.map((testimonial: Testimonial) => (
-            <div key={testimonial.name} className="p-6">
-              <Testimonial testimonial={testimonial} />
-            </div>
-          ))}
-        </Slider>
       </div>
     </section>
   )

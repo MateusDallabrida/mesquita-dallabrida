@@ -19,14 +19,17 @@ export function AboutUs({ aboutUs }: Props) {
         </h2>
 
         <div className="mt-8 sm:mt-12 md:grid grid-cols-2 gap-8 lg:gap-12 px-4 xl:px-0">
-          <Image
-            src={aboutUs.image.url}
-            alt="Os advogados Mateus e Cássia estão exibindo um livro de direito"
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="w-full max-h-[640px] object-cover rounded-tl-[64px] rounded-tr rounded-br-[64px] rounded-bl"
-          />
+          <div className="relative w-full h-full md:max-h-[640px]">
+            <Image
+              src={aboutUs.image.url}
+              alt="Os advogados Mateus e Cássia estão exibindo um livro de direito"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="w-full h-full object-cover rounded-tl-[64px] rounded-tr rounded-br-[64px] rounded-bl"
+            />
+            <div className="absolute -left-4 -bottom-4 -z-10 w-full h-full rounded-tl-[64px] rounded-tr rounded-br-[64px] rounded-bl bg-main" />
+          </div>
 
           <div className="w-full">
             {aboutUs.description.split('\n\n').map((paragraph, index) => (
