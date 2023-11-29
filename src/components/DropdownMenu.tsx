@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { useState } from "react"
 import { DropdownItem } from "@/components/DropdownItem"
+import { RiArrowDropDownFill } from "react-icons/ri"
 
 interface Item {
   value: string
@@ -32,8 +33,9 @@ export function DropdownMenu({ menu, items }: Props) {
       onMouseLeave={esconderDropdown}
       className="relative inline-block text-left group"
     >
-      <Link className="hover:underline underline-offset-4 font-bold pb-4" href={menu.href}>
+      <Link className="relative hover:underline underline-offset-4 font-bold pb-4" href={menu.href}>
         {menu.value}
+      <RiArrowDropDownFill className="absolute -top-2 -right-8 text-4xl" />
       </Link>
 
       {dropdownVisivel && (

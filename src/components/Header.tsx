@@ -25,7 +25,7 @@ export function Header() {
           </div>
         </Link>
 
-        <nav className='hidden sm:flex gap-8 items-center font-medium'>
+        <nav className='hidden sm:flex gap-12 items-center font-medium'>
           <Link
             href="/" className="hover:underline underline-offset-4 font-bold">
             Início

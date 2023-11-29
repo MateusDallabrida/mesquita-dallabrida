@@ -16,7 +16,7 @@ export function Section3() {
 
       {/* Container */}
       <div className="absolute max-w-5xl w-full mx-auto py-12">
-        <h2 className="text-[45px] font-bold text-main text-center leading-tight mb-12">
+        <h2 className="text-2xl lg:text-3xl font-bold text-main text-center leading-tight mb-12">
           Etapas do processo de nacionalidade portuguesa
         </h2>
 

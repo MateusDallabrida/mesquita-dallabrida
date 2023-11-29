@@ -10,7 +10,7 @@ export function Section6() {
       <div className="max-w-5xl mx-auto">
         {/* Content 1 */}
         <div className="bg-main rounded-xl py-12 px-4 lg:px-16 mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-second mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold text-second mb-6">
             Perguntas frequentes
           </h2>
 
@@ -19,7 +19,7 @@ export function Section6() {
               <h3 className="text-xl font-bold text-second mb-4">
                 Quanto tempo leva o processo?
               </h3>
-              <p className="text-lg text-second">
+              <p className="text-base text-second">
                 O processo pode variar de vários meses a alguns anos, dependendo da situação de cada cliente e da complexidade do caso.
               </p>
             </div>
@@ -27,7 +27,7 @@ export function Section6() {
               <h3 className="text-xl font-bold text-second mb-4">
                 Quais são os documentos necessários?
               </h3>
-              <p className="text-lg text-second">
+              <p className="text-base text-second">
                 Os documentos necessários podem variar de acordo com a situação de cada cliente.
               </p>
             </div>
@@ -35,7 +35,7 @@ export function Section6() {
               <h3 className="text-xl font-bold text-second mb-4">
                 Eu preciso viajar para Portugal?
               </h3>
-              <p className="text-lg text-second">
+              <p className="text-base text-second">
                 Não, nós tomamos conta da solicitação e não há necessidade de o cliente viajar para Portugal.
               </p>
             </div>
@@ -43,7 +43,7 @@ export function Section6() {
               <h3 className="text-xl font-bold text-second mb-4">
                 Qual é a taxa de sucesso da solicitação?
               </h3>
-              <p className="text-lg text-second">
+              <p className="text-base text-second">
                 A taxa de sucesso varia de acordo com cada caso. No entanto, com nossa ajuda, temos altas chances de sucesso.
               </p>
             </div>
@@ -60,7 +60,7 @@ export function Section6() {
             className="w-full h-[225px] object-cover rounded-t-xl"
           />
           <div className="py-12 px-4 lg:px-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-main mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-main mb-6">
               INVESTIMENTO
             </h2>
             <h3 className="text-lg font-bold text-main mb-2">
@@ -101,7 +101,7 @@ export function Section6() {
         {/* Content 3 */}
         <div className="bg-second rounded-xl mb-16 flex flex-col-reverse md:flex-row">
           <div className="w-full py-12 lg:py-24 px-4 lg:px-16 bg-second rounded-bl-xl md:rounded-tl-xl rounded-br-xl md:rounded-br-none">
-            <h2 className="text-4xl lg:text-5xl font-bold text-main leading-tight">
+            <h2 className="text-2xl lg:text-3xl font-bold text-main leading-tight">
               Contrate nossos serviços e realize o seu sonho de ser um cidadão português!
             </h2>
             <a
@@ -125,13 +125,13 @@ export function Section6() {
         {/* Content 4 */}
         <div className="flex flex-col-reverse md:flex-row">
           <div className="w-full bg-main px-8 lg:px-16 py-8 lg:py-16 rounded-bl-xl md:rounded-tl-xl rounded-br-xl md:rounded-br-none">
-            <h2 className="text-4xl lg:text-5xl font-bold text-second leading-tight mb-6">
+            <h2 className="text-2xl lg:text-3xl font-bold text-second leading-tight mb-6">
               Esperamos ter esclarecido os serviços e valores do investimento
             </h2>
-            <p className="text-second text-[27px] leading-tight mb-6">
+            <p className="text-second text-lg leading-tight mb-6">
               Esperamos seu retorno para darmos andamento aos trabalhos. 
             </p>
-            <p className="text-second text-[27px] leading-tight">
+            <p className="text-second text-lg leading-tight">
               Atenciosamente,
             </p>
           </div>

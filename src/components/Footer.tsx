@@ -23,7 +23,7 @@ export function Footer({ footer }: Props) {
         sizes="100vw"
         className="w-full h-full object-cover"
       />
-      <div className="absolute w-full h-full bg-[#343f2c] opacity-75" />
+      <div className="absolute w-full h-full bg-[#343f2c] opacity-60" />
       <div className="absolute bg-main max-w-7xl w-full mx-auto grid md:grid-cols-2 gap-12 p-4 sm:p-12 rounded-lg">
         <Image
           alt="Logotipo da Mesquita e Dallabrida"

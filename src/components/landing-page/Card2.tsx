@@ -22,10 +22,10 @@ export function Card2({ props }: Props) {
         sizes="100vw"
         className="w-full aspect-video object-cover rounded-lg"
       />
-      <h3 className="text-[22px] font-bold text-second">
+      <h3 className="text-xl font-bold text-second">
         {props.title}
       </h3>
-      <p className="text-lg text-second">
+      <p className="text-base text-second">
         {props.description}
       </p>
     </div>

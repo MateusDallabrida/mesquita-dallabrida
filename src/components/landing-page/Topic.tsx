@@ -23,7 +23,7 @@ export function Topic({ props }: Props) {
       <p className={`text-[27px] font-bold text-second text-center`}>
         {props.topic}
       </p>
-      <div className={`absolute ${isLeft ? "left-10" : "-right-6 md:right-10"} top-1/2 -translate-y-1/2 w-[24px] lg:w-[96px] h-[6px] bg-main`} />
+      <div className={`absolute ${isLeft ? "left-10" : "-right-5 md:right-10"} top-1/2 -translate-y-1/2 w-[20px] lg:w-[96px] h-[6px] bg-main`} />
       <span className={`${props.custom} absolute ${isLeft ? "left-[60px] lg:left-[160px] text-left" : "right-[-320px] md:right-[80px] lg:right-[160px] text-left md:text-right"} w-[300px] text-base md:text-lg lg:text-xl`}>
         {props.title && <div className="text-[22px] font-bold text-main mb-4">
           {props.title}
