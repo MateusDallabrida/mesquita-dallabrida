@@ -11,7 +11,7 @@ import { Card } from "@/components/landing-page/Card"
 export function Section2() {
   return (
     <section
-      className="relative bg-fixed bg-cover bg-center h-full"
+      className="relative bg-scroll md:bg-fixed md:bg-cover bg-center h-full"
       style={{ backgroundImage: "url('/landing-page/example_01.jpg')" }}
     >
       <div className="absolute w-full h-full bg-main opacity-60" />

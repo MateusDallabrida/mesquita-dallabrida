@@ -3,7 +3,7 @@ import Image from "next/image"
 export function Section6() {
   return (
     <section
-      className="bg-fixed bg-cover bg-center h-full py-16"
+      className="bg-scroll md:bg-fixed md:bg-cover bg-center h-full py-16"
       style={{ backgroundImage: "url('/landing-page/example_08.jpg')" }}
     >
       {/* Container */}

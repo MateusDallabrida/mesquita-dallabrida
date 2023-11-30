@@ -6,7 +6,7 @@ import { Card } from "@/components/landing-page/Card"
 export function Section5() {
   return (
     <section
-      className="bg-fixed bg-cover bg-center h-full py-32"
+      className="bg-scroll md:bg-fixed bg-contain md:bg-cover bg-center h-full py-32"
       style={{ backgroundImage: "url('/landing-page/example_16.jpg')" }}
     >
       {/* Container */}
