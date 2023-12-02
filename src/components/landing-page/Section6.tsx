@@ -141,7 +141,7 @@ export function Section6() {
             height={0}
             width={0}
             sizes="100vw"
-            className="w-full md:w-2/5 h-[350px] md:h-auto object-cover rounded-bl-xl md:rounded-bl-none rounded-tl-xl md:rounded-tl-none rounded-tr-none md:rounded-tr-xl rounded-br-xl"
+            className="w-full md:w-2/5 h-[350px] md:h-auto object-cover rounded-tr-none md:rounded-tr-xl rounded-br-xl rounded-bl-xl md:rounded-bl-none"
           />
         </div>
       </div>
