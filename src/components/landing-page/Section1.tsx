@@ -44,7 +44,7 @@ export function Section1() {
           </div>
         </div>
         {/* Content 2 */}
-        <div className="p-4">
+        <div className="p-4 pb-16">
           <p className="text-base sm:text-lg font-bold text-second text-center pb-6">
             Se você quer obter sua cidadania portuguesa, nós estamos aqui para te ajudar.
           </p>

@@ -3,8 +3,8 @@ import { Topic } from "@/components/landing-page/Topic"
 
 export function Section3() {
   return (
-    <section className="relative w-full h-[1152px] md:h-screen flex flex-col justify-start items-center">
-      <div className="absolute w-full h-full bg-second opacity-90" />
+    <section className="relative w-full h-[1024px] md:h-[700px] flex flex-col justify-start items-center">
+      <div className="absolute w-full h-full bg-second opacity-906" />
       <Image
         src="/landing-page/example_04.jpg"
         alt=""
@@ -33,7 +33,7 @@ export function Section3() {
           <Topic props={{
             topic: 2,
             title: "Levantamento e busca de documentação",
-            description: "EAnalisaremos cada caso de forma individual e personalizada, já que dependendo da situação, poderá ser necessário mais documentos e/ou procedimentos para garantir o sucesso durante todo o processo.",
+            description: "E analisaremos cada caso de forma individual e personalizada, já que dependendo da situação, poderá ser necessário mais documentos e/ou procedimentos para garantir o sucesso durante todo o processo.",
             orientation: "left",
             custom: "top-0"
           }} />

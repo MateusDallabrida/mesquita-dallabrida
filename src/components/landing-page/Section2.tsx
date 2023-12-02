@@ -18,7 +18,7 @@ export function Section2() {
       {/* Container */}
       <div className="relative max-w-5xl mx-auto py-12">
         {/* Content 1 */}
-        <div className="bg-second rounded-xl pt-12 pb-64 px-0 lg:px-16 mb-16">
+        <div className="bg-second mx-6 rounded-xl pt-4 sm:pt-12 pb-8 sm:pb-24 px-0 lg:px-16 mb-16">
           <h2 className="text-2xl lg:text-3xl font-bold text-main text-center leading-tight mb-6 lg:mb-12">
             Descubra o sonho de ser um cidadão europeu!
           </h2>
@@ -30,12 +30,12 @@ export function Section2() {
             sizes="100vw"
             className="w-[100px] rounded-md mx-auto mb-6 lg:mb-12"
           />
-          <h2 className="text-2xl lg:text-3xl font-bold text-main text-center leading-tight mb-6 lg:mb-12">
+          <h2 className="text-2xl lg:text-3xl font-bold text-main text-center leading-tight mb-32 lg:mb-12 mx-4 sm:mx-0">
             Com a cidadania portuguesa você poderá ter acesso a:
           </h2>
 
           {/* Timeline */}
-          <div className="relative flex flex-col items-start md:items-center space-y-[384px] md:space-y-[160px] pl-8">
+          <div className="relative flex flex-col items-start md:items-center space-y-[300px] md:space-y-[150px] pl-6">
             <div className="absolute w-[6px] h-full bg-main mx-auto" />
             <Topic props={{
               topic: 1,
@@ -47,7 +47,7 @@ export function Section2() {
               },
               custom: "top-1/2 -translate-y-1/2"
             }} />
-            <Topic props={{
+            {/* <Topic props={{
               topic: 2,
               description: <span><span className="font-bold">Oportunidades de trabalho</span> em qualquer país da <span className="font-bold">União Europeia.</span></span>,
               orientation: "left",
@@ -56,9 +56,9 @@ export function Section2() {
                 alt: ""
               },
               custom: "top-1/2 -translate-y-1/2"
-            }} />
+            }} /> */}
             <Topic props={{
-              topic: 3,
+              topic: 2,
               description: <span>Acesso a uma <span className="font-bold">educação de qualidade</span></span>,
               orientation: "right",
               img: {
@@ -68,7 +68,7 @@ export function Section2() {
               custom: "top-1/2 -translate-y-1/2"
             }} />
             <Topic props={{
-              topic: 4,
+              topic: 3,
               description: <span>Sistema de <span className="font-bold">saúde de alto padrão</span></span>,
               orientation: "left",
               img: {
@@ -78,7 +78,7 @@ export function Section2() {
               custom: "top-1/2 -translate-y-1/2"
             }} />
             <Topic props={{
-              topic: 5,
+              topic: 4,
               description: <span className="font-bold">Qualidade de vida!</span>,
               orientation: "right",
               img: {
@@ -88,7 +88,7 @@ export function Section2() {
               custom: "top-1/2 -translate-y-1/2"
             }} />
             <Topic props={{
-              topic: 6,
+              topic: 5,
               description: <span><span className="font-bold">Segurança pública</span> e baixo índice de criminalidade!</span>,
               orientation: "left",
               img: {
@@ -98,7 +98,7 @@ export function Section2() {
               custom: "top-1/2 -translate-y-1/2"
             }} />
             <Topic props={{
-              topic: 7,
+              topic: 6,
               description: <span>Um dos 5 <span className="font-bold">passaportes</span> mais <span className="font-bold">poderosos</span> do mundo!</span>,
               orientation: "right",
               img: {
@@ -111,7 +111,7 @@ export function Section2() {
         </div>
 
         {/* Content 2 */}
-        <div className="bg-second rounded-xl py-12 px-4 lg:px-16">
+        <div className="bg-second mx-6 rounded-xl py-12 px-4 lg:px-16">
           <h2 className="text-2xl lg:text-3xl font-bold text-main text-center leading-tight mb-6">
             Quem pode requerer a nacionalidade portuguesa?
           </h2>
