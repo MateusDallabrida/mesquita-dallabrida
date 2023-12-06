@@ -17,6 +17,7 @@ import { Section3 } from '@/components/cidadania-italiana/Section3'
 import { getFooter } from '@/utils/getFooter'
 import { getTestimonials } from '@/utils/getTestimonials'
 import { getAboutUs } from '@/utils/getAboutUs'
+import { Chat } from "@/components/landing-page/Chat"
 
 interface Testimonial {
   name: string
@@ -97,6 +98,7 @@ export default function CidadaniaItaliana({ data }: any) {
         <AboutUs aboutUs={aboutUs} />
         <Footer footer={footer} />
       </div>
+      <Chat />
     </>
   )
 }

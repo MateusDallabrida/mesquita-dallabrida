@@ -5,11 +5,11 @@ export function Section2() {
     <section className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto py-16 px-4 lg:px-0">
       <Image
         alt=""
-        src="/porto.jpg"
+        src="/ex_02.jpg"
         width={0}
         height={0}
         sizes="100vw"
-        className="w-full h-[368px] object-cover object-top rounded-md"
+        className="w-full h-auto object-cover object-top rounded-md"
       />
       <div>
         <h2 className="text-4xl md:text-5xl font-bold text-main mb-8">

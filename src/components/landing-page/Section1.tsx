@@ -30,9 +30,6 @@ export function Section1() {
             <h2 className="text-xl lg:text-2xl font-bold text-second text-center leading-tight">
               Obtenha a sua <span className="underline">nacionalidade Portuguesa</span> com a nossa ajuda!
             </h2>
-            <p className="text-lg lg:text-xl font-medium text-second text-center">
-              Proposta de investimento para obtenção da Cidadania Portuguesa!
-            </p>
             <Image
               src="/portugal_flag.png"
               alt=""

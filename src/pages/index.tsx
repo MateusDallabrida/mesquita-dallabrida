@@ -20,6 +20,7 @@ import { getTestimonials } from '@/utils/getTestimonials'
 import { getFaqs } from '@/utils/getFaqs'
 import { getFooter } from '@/utils/getFooter'
 import { getPosts } from '@/utils/getPosts'
+import { Chat } from '@/components/landing-page/Chat'
 
 export default function Home({ data }: any) {
   if (!data) return
@@ -51,6 +52,7 @@ export default function Home({ data }: any) {
         <FAQ faqs={faqs} />
         <Footer footer={footer} />
       </div>
+      <Chat />
     </>
   )
 }

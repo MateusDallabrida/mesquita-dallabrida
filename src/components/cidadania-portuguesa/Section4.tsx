@@ -7,7 +7,7 @@ export function Section4() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto py-16 px-4 lg:px-0">
         <Image
           alt=""
-          src="/tram-5621647_1280.jpg"
+          src="/ex_01.jpeg"
           width={0}
           height={0}
           sizes="100vw"

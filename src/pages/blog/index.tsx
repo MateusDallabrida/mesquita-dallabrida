@@ -5,6 +5,7 @@ import { Thumbnail } from "@/components/Thumbnail"
 
 import { getFooter } from '@/utils/getFooter'
 import { getPosts } from '@/utils/getPosts'
+import { Chat } from "@/components/landing-page/Chat"
 
 interface Post {
   author: string
@@ -32,7 +33,7 @@ export default function Blog({ data }: any) {
       <Communication />
       <Header />
       <div className="relative sm:static top-[64px]">
-        <main className="max-w-7xl mx-auto p-4 xl:px-0">
+        <main className="max-w-7xl mx-auto px-4 xl:px-0 py-12 sm:py-20">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {posts.map((post: Post) => (
             <Thumbnail key={post.slug} post={post} />
@@ -41,6 +42,7 @@ export default function Blog({ data }: any) {
         </main>
         <Footer footer={footer} />
       </div>
+      <Chat />
     </>
   )
 }

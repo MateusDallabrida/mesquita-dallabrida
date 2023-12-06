@@ -8,6 +8,7 @@ import { Section1 } from '@/components/vistos/Section1'
 import { Section2 } from '@/components/vistos/Section2'
 import { Section3 } from '@/components/vistos/Section3'
 import { getTestimonials } from '@/utils/getTestimonials'
+import { Chat } from '@/components/landing-page/Chat'
 
 interface Testimonial {
   name: string
@@ -33,6 +34,7 @@ export default function Vistos({ data }: any) {
         <Section3 testimonials={testimonials} />
         <Footer footer={footer} />
       </div>
+      <Chat />
     </>
   )
 }

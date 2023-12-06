@@ -8,6 +8,7 @@ import Image from "next/image"
 import { getFooter } from '@/utils/getFooter'
 import { getPosts } from '@/utils/getPosts'
 import { getPostBySlug } from '@/utils/getPostBySlug'
+import { Chat } from "@/components/landing-page/Chat"
 
 export default function Post({ data }: any) {
   if (!data) return
@@ -34,7 +35,7 @@ export default function Post({ data }: any) {
       <Communication />
       <Header />
       <div className="relative sm:static top-[64px]">
-        <main className="max-w-3xl mx-auto p-4 xl:px-0">
+        <main className="max-w-3xl mx-auto px-4 xl:px-0 py-12 sm:py-20">
           <div className="flex gap-4 flex-wrap items-center">
             <p className="text-sm font-medium py-1 px-3 text-main bg-red-100 rounded-2xl">
               {post.tag}
@@ -67,6 +68,7 @@ export default function Post({ data }: any) {
         </main>
         <Footer footer={footer} />
       </div>
+      <Chat />
     </>
   )
 }

@@ -10,6 +10,7 @@ import { Section4 } from '@/components/busca-por-certidoes/Section4'
 import { getFooter } from '@/utils/getFooter'
 import { getTestimonials } from '@/utils/getTestimonials'
 import { getAboutUs } from '@/utils/getAboutUs'
+import { Chat } from '@/components/landing-page/Chat'
 
 export default function BuscaPorCertidoes({ data }: any) {
   if (!data) return
@@ -27,6 +28,7 @@ export default function BuscaPorCertidoes({ data }: any) {
         <AboutUs aboutUs={aboutUs} />
         <Footer footer={footer} />
       </div>
+      <Chat />
     </>
   )
 }
