@@ -2,8 +2,7 @@ import Image from "next/image"
 
 export function Section1() {
   return (
-    <section
-      className="relative">
+    <section className="relative h-screen">
       <Image
         src="/landing-page/example_15.webp"
         alt=""
@@ -14,9 +13,9 @@ export function Section1() {
       />
       <div className="absolute w-full h-full bg-[#343f2c] opacity-60" />
       {/* Container */}
-      <div className="relative max-w-5xl mx-auto px-4 lg:px-16 pb-4">
+      <div className="relative h-full max-w-5xl mx-auto px-4 lg:px-16 pb-4 flex flex-col items-center justify-center sm:gap-24 md:gap-32">
         {/* Content 1 */}
-        <div className="h-screen flex flex-col md:flex-row items-center justify-center gap-12 md:gap-6">
+        <div className="h-auto flex flex-col md:flex-row items-center justify-center gap-12 md:gap-6">
           <Image
             alt="Logotipo da Mesquita e Dallabrida"
             src="/Logo_Branca_sem-fundo.png"
@@ -41,14 +40,14 @@ export function Section1() {
           </div>
         </div>
         {/* Content 2 */}
-        <div className="p-4 pb-16">
-          <p className="text-base sm:text-lg font-bold text-second text-center pb-6">
+        <div className="p-4">
+          <p className="text-sm sm:text-base md:text-lg font-bold text-second text-center pb-4">
             Se você quer obter sua cidadania portuguesa, nós estamos aqui para te ajudar.
           </p>
-          <p className="text-base sm:text-lg font-bold text-second text-center pb-6">
+          <p className="text-sm sm:text-base md:text-lg font-bold text-second text-center pb-4">
             Com anos de experiência e conhecimento profundo do processo, nós fornecemos serviços confiáveis e eficientes para te ajudar a tornar-se um cidadão português e consequentemente um cidadadão europeu. 
           </p>
-          <p className="text-base sm:text-lg font-bold text-second text-center">
+          <p className="text-sm sm:text-base md:text-lg font-bold text-second text-center">
             Deixe-nos guiar você em cada etapa do processo.
           </p>
         </div>

@@ -26,6 +26,8 @@ export function Communication() {
     obterCotacaoEuro()
   }, [])
 
+  const cotacaoFinal = cotacaoEuro.toLocaleString('pt-BR', { maximumFractionDigits: 3 }).replace(',', '.')
+
   return (
     <div className="bg-zinc-900 text-white hidden sm:block">
       <div className="max-w-7xl mx-auto px-4 xl:px-0 py-3 flex justify-between">
@@ -39,7 +41,7 @@ export function Communication() {
           <p>
             Cotação do Euro: 
             <span className="ml-1 md:ml-2 font-bold">
-              €{cotacaoEuro.toLocaleString('pt-BR', { maximumFractionDigits: 2 })}
+              €{Math.ceil(Number(cotacaoFinal) * 100) / 100}
             </span>
           </p>
         </div>

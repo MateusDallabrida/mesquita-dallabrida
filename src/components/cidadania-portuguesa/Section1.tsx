@@ -5,10 +5,10 @@ export function Section1() {
     <section className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto py-16 px-4 lg:px-0">
       <div>
         <h2 className="text-4xl md:text-5xl font-bold text-main mb-8">
-          Há mais de 6 anos ajudando pessoas a realizarem o sonho Europeu!
+          Há mais de 2 anos ajudando pessoas a realizarem o sonho Europeu!
         </h2>
         <p className="text-lg mb-4">
-          Há mais de 6 anos ajudando pessoas a realizarem o sonho Europeu!
+          Há mais de 2 anos ajudando pessoas a realizarem o sonho Europeu!
         </p>
         <a
           href={`https://api.whatsapp.com/send?phone=351939559818`}

@@ -40,7 +40,7 @@ export function Section2() {
             <Topic props={{
               topic: 1,
               description: <span><span className="font-bold">Livre circulação</span> pelos países da União Europeia. Viagens para os Estados Unidos e outros destinos, <span className="font-bold">sem precisar de um visto</span>.</span>,
-              orientation: "right",
+              orientation: "left",
               img: {
                 src: "/landing-page/example_04.jpg",
                 alt: ""

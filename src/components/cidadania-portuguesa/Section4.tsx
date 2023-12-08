@@ -20,7 +20,7 @@ export function Section4() {
           <p className="text-lg mb-4 flex ">
             <RiArrowRightSFill className="w-8 h-8 text-main" />
             <span className="w-full">
-              Há mais de 6 anos ajudando pessoas a realizarem o sonho Europeu!
+              Há mais de 2 anos ajudando pessoas a realizarem o sonho Europeu!
             </span>
           </p>
           <p className="text-lg mb-4 flex w-full">
