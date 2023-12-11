@@ -30,7 +30,7 @@ export function Section2() {
             sizes="100vw"
             className="w-[100px] rounded-md mx-auto mb-6 lg:mb-12"
           />
-          <h2 className="text-2xl lg:text-3xl font-bold text-main text-center leading-tight mb-32 lg:mb-12 mx-4 sm:mx-0">
+          <h2 className="text-2xl lg:text-3xl font-bold text-main text-center leading-tight mb-32 mx-4 sm:mx-0">
             Com a cidadania portuguesa você poderá ter acesso a:
           </h2>
 
