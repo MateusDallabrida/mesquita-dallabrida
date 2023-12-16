@@ -6,24 +6,25 @@ import { Section1 } from '@/components/busca-por-certidoes/Section1'
 import { Section2 } from '@/components/busca-por-certidoes/Section2'
 import { Section3 } from '@/components/busca-por-certidoes/Section3'
 import { Section4 } from '@/components/busca-por-certidoes/Section4'
+import { Chat } from '@/components/landing-page/Chat'
 
 import { getFooter } from '@/utils/getFooter'
 import { getTestimonials } from '@/utils/getTestimonials'
 import { getAboutUs } from '@/utils/getAboutUs'
-import { Chat } from '@/components/landing-page/Chat'
+import { getInfos } from '@/utils/getInfos'
 
 export default function BuscaPorCertidoes({ data }: any) {
   if (!data) return
-  const { footer, testimonials, aboutUs } = JSON.parse(data)
+  const { footer, testimonials, aboutUs, infos } = JSON.parse(data)
 
   return (
     <>
       <Communication />
       <Header />
       <div className="relative sm:static top-[64px]">
-        <Section1 />
-        <Section2 />
-        <Section3 />
+        <Section1 infos={infos} />
+        <Section2 infos={infos} />
+        <Section3 infos={infos} />
         <Section4 testimonials={testimonials} />
         <AboutUs aboutUs={aboutUs} />
         <Footer footer={footer} />
@@ -37,13 +38,15 @@ export async function getStaticProps() {
   const { footer } = await getFooter()
   const { testimonials } = await getTestimonials()
   const { aboutUs } = await getAboutUs()
+  const { infos } = await getInfos()
 
   return {
     props: {
       data: JSON.stringify({
         footer,
         testimonials,
-        aboutUs
+        aboutUs,
+        infos
       }) || null
     }
   }

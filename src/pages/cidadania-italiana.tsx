@@ -13,11 +13,14 @@ import { AboutUs } from '@/components/AboutUs'
 import { Section1 } from '@/components/cidadania-italiana/Section1'
 import { Section2 } from '@/components/cidadania-italiana/Section2'
 import { Section3 } from '@/components/cidadania-italiana/Section3'
+import { Chat } from "@/components/landing-page/Chat"
 
 import { getFooter } from '@/utils/getFooter'
 import { getTestimonials } from '@/utils/getTestimonials'
 import { getAboutUs } from '@/utils/getAboutUs'
-import { Chat } from "@/components/landing-page/Chat"
+import { getInfos } from '@/utils/getInfos'
+import { getQualities } from '@/utils/getQualities'
+import { getFaqs } from '@/utils/getFaqs'
 
 interface Testimonial {
   name: string
@@ -30,7 +33,7 @@ interface Testimonial {
 
 export default function CidadaniaItaliana({ data }: any) {
   if (!data) return
-  const { footer, testimonials, aboutUs } = JSON.parse(data)
+  const { footer, testimonials, aboutUs, infos, qualities, faqs } = JSON.parse(data)
 
   const settings = {
     infinite: true,
@@ -60,9 +63,9 @@ export default function CidadaniaItaliana({ data }: any) {
       <Communication />
       <Header />
       <div className="relative sm:static top-[64px]">
-        <Section1 />
-        <Section3 />
-        <Section2 />
+        <Section1 infos={infos} />
+        <Section3 qualities={qualities} />
+        <Section2 faqs={faqs} />
         <div className="relative">
           <Image
             src="/landing-page/example_01.jpg"
@@ -107,13 +110,19 @@ export async function getStaticProps() {
   const { footer } = await getFooter()
   const { testimonials } = await getTestimonials()
   const { aboutUs } = await getAboutUs()
+  const { infos } = await getInfos()
+  const { qualities } = await getQualities()
+  const { faqs } = await getFaqs()
 
   return {
     props: {
       data: JSON.stringify({
         footer,
         testimonials,
-        aboutUs
+        aboutUs,
+        infos,
+        qualities,
+        faqs
       }) || null
     }
   }

@@ -1,14 +1,12 @@
 import { fetchHygraphQuery } from "./fetchHygraphQuery"
 
-export function getQualities() {
+export function getWhos() {
   const query = `
     query MyQuery {
-      qualities(first: 20) {
-        type
-        caption
-        heading
+      whoIsEntitleds(first: 20) {
+        title
       }
-    }  
+    }
   `
 
   return fetchHygraphQuery(query)

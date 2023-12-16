@@ -1,6 +1,21 @@
 import Image from "next/image"
 
-export function Section2() {
+interface Info {
+  title: string
+  description: string
+  secondaryDescription?: string
+  phone: string
+  image: {
+    url: string
+  }
+}
+
+interface Props {
+  infos: Info[]
+}
+
+export function Section2({ infos }: Props) {
+  const info = [...infos].filter(info => info.title === "Vantagens de obter a Nacionalidade Portuguesa")[0]
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto py-16 px-4 lg:px-0">
       <Image
@@ -15,21 +30,11 @@ export function Section2() {
         <h2 className="text-4xl md:text-5xl font-bold text-main mb-8">
           Vantagens de obter a Nacionalidade Portuguesa
         </h2>
-        <p className="text-lg mb-4">
-          Ser um cidadão europeu;
-        </p>
-        <p className="text-lg mb-4">
-          Ter a possibilidade de circular pelos 27 países do Espaço Schengen sem a exigência de visto;
-        </p>
-        <p className="text-lg mb-4">
-          Ter acesso às melhores escolas e universidades do mundo pelo melhor preço;
-        </p>
-        <p className="text-lg mb-4">
-          Mais facilidade em obter o visto para EUA, Japão e Canadá;
-        </p>
-        <p className="text-lg mb-4">
-          Ter acesso a serviços de saúde com boa estrutura e qualidade.
-        </p>
+        {info.description.split('\n\n').map((paragraph, index) => (
+            <p key={index} className="text-lg mb-4">
+              {paragraph}
+            </p>
+          ))}
         <a
           href={`https://api.whatsapp.com/send?phone=351939559818`}
           target="_blank"

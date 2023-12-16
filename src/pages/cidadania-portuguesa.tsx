@@ -14,11 +14,14 @@ import { Section1 } from '@/components/cidadania-portuguesa/Section1'
 import { Section2 } from '@/components/cidadania-portuguesa/Section2'
 import { Section3 } from '@/components/cidadania-portuguesa/Section3'
 import { Section4 } from '@/components/cidadania-portuguesa/Section4'
+import { Chat } from "@/components/landing-page/Chat"
 
 import { getFooter } from '@/utils/getFooter'
 import { getTestimonials } from '@/utils/getTestimonials'
 import { getAboutUs } from '@/utils/getAboutUs'
-import { Chat } from "@/components/landing-page/Chat"
+import { getInfos } from '@/utils/getInfos'
+import { getWhos } from '@/utils/getWhos'
+import { getQualities } from '@/utils/getQualities'
 
 interface Testimonial {
   name: string
@@ -31,7 +34,7 @@ interface Testimonial {
 
 export default function CidadaniaItaliana({ data }: any) {
   if (!data) return
-  const { footer, testimonials, aboutUs } = JSON.parse(data)
+  const { footer, testimonials, aboutUs, infos, whoIsEntitleds, qualities } = JSON.parse(data)
 
   const settings = {
     infinite: true,
@@ -61,10 +64,10 @@ export default function CidadaniaItaliana({ data }: any) {
       <Communication />
       <Header />
       <div className="relative sm:static top-[64px]">
-        <Section1 />
-        <Section4 />
-        <Section2 />
-        <Section3 />
+        <Section1 infos={infos} />
+        <Section4 whoIsEntitleds={whoIsEntitleds} />
+        <Section2 infos={infos} />
+        <Section3 qualities={qualities} />
         <div className="relative">
           <Image
             src="/landing-page/example_01.jpg"
@@ -109,13 +112,19 @@ export async function getStaticProps() {
   const { footer } = await getFooter()
   const { testimonials } = await getTestimonials()
   const { aboutUs } = await getAboutUs()
+  const { infos } = await getInfos()
+  const { whoIsEntitleds } = await getWhos()
+  const { qualities } = await getQualities()
 
   return {
     props: {
       data: JSON.stringify({
         footer,
         testimonials,
-        aboutUs
+        aboutUs,
+        infos,
+        whoIsEntitleds,
+        qualities
       }) || null
     }
   }

@@ -9,27 +9,20 @@ import { Section2 } from '@/components/vistos/Section2'
 import { Section3 } from '@/components/vistos/Section3'
 import { getTestimonials } from '@/utils/getTestimonials'
 import { Chat } from '@/components/landing-page/Chat'
-
-interface Testimonial {
-  name: string
-  star: number
-  description: string
-  image: {
-    url: string
-  }
-}
+import { getInfos } from '@/utils/getInfos'
+import { getFaqs } from '@/utils/getFaqs'
 
 export default function Vistos({ data }: any) {
   if (!data) return
-  const { footer, testimonials, aboutUs } = JSON.parse(data)
+  const { footer, testimonials, aboutUs, infos, faqs } = JSON.parse(data)
 
   return (
     <>
       <Communication />
       <Header />
       <div className="relative sm:static top-[64px]">
-        <Section1 />
-        <Section2 />
+        <Section1 infos={infos} />
+        <Section2 infos={infos} faqs={faqs} />
         <AboutUs aboutUs={aboutUs} />
         <Section3 testimonials={testimonials} />
         <Footer footer={footer} />
@@ -43,13 +36,17 @@ export async function getStaticProps() {
   const { footer } = await getFooter()
   const { testimonials } = await getTestimonials()
   const { aboutUs } = await getAboutUs()
+  const { infos } = await getInfos()
+  const { faqs } = await getFaqs()
 
   return {
     props: {
       data: JSON.stringify({
         footer,
         testimonials,
-        aboutUs
+        aboutUs,
+        infos,
+        faqs
       }) || null
     }
   }
