@@ -2,6 +2,7 @@ import { Acordeon } from "@/components/Acordeon"
 import Image from "next/image"
 
 interface Faq {
+  type: string
   answer: string
   question: string
 }
@@ -11,6 +12,8 @@ interface Props {
 }
 
 export function FAQ({ faqs }: Props) {
+  const faqFilter = [...faqs].filter(faq => faq.type === "faq")
+
   return (
     <section>
       <div className="max-w-7xl mx-auto py-12 px-4 xl:px-0 grid lg:grid-cols-2 gap-12">
@@ -43,7 +46,7 @@ export function FAQ({ faqs }: Props) {
         </div>
 
         <div className="flex flex-col gap-6">
-          {faqs.map((faq: Faq) => (
+          {faqFilter.map((faq: Faq) => (
             <Acordeon
               key={faq.question}
               title={faq.question}

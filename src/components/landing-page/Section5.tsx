@@ -80,11 +80,12 @@ export function Section5({ landingPage, lpItems }: Props) {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {session06.map((item, index) => (
+          {session06.map((item, index, array) => (
             <Card key={index} props={{
               icon: item.icon,
               title: item.title,
-              description: item.description.raw
+              description: item.description.raw,
+              custom: index === array.length -1 ? "col-span-2" : "col-span-1"
             }} />
           ))}
         </div>

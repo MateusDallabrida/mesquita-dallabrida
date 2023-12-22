@@ -12,7 +12,7 @@ interface Props {
 
 export function Card({ props }: Props) {
   return (
-    <div className={`${props.custom} w-full bg-main rounded-md p-4`}>
+    <div className={`w-full bg-main rounded-md p-4 ${props.custom}`}>
       <div className="flex justify-between items-start">        
         <h3 className="w-full text-second text-lg sm:text-xl font-bold">
           {props.title}
