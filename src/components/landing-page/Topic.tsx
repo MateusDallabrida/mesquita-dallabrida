@@ -1,10 +1,12 @@
 import Image from "next/image"
 import { useState } from "react"
 
+import { RichText } from '@/components/RichText'
+
 interface Props {
   props: {
     topic: number
-    description: React.ReactNode
+    description: any
     orientation: "left" | "right"
     title?: string
     img?: {
@@ -29,7 +31,7 @@ export function Topic({ props }: Props) {
           {props.title}
         </div>}
         <div className="text-sm sm:text-base">
-          {props.description}
+          <RichText content={props.description} />
         </div>
         {props.img && <Image
           src={props.img.src}

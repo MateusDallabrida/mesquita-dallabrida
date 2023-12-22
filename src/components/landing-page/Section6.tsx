@@ -1,6 +1,70 @@
 import Image from "next/image"
 
-export function Section6() {
+import { RichText } from '@/components/RichText'
+
+interface LandingPage {
+  title: string
+  session01Logo: {
+    url: string
+  }
+  session01Slogan: string
+  session01Flag: {
+    url: string
+  }
+  session01Description: string
+  session02Heading1: string
+  session02Flag: {
+    url: string
+  }
+  session02Heading2: string
+  session03Heading1: string
+  session03Flag: {
+    url: string
+  }
+  session03Description: string
+  session04Heading1: string
+  session05Heading1: string
+  session05Description: string
+  session06Heading1: string
+  session06Description: string
+  session07Heading1: string
+  session08Imagem: {
+    url: string
+  }
+  session08Heading1: string
+  session09Heading1: string
+  session09Image: {
+    url: string
+  }
+  session09Phone: string
+  session10Heading1: string
+  session10Description: string
+  session10Image: {
+    url: string
+  }
+}
+
+interface LPItems {
+  type: string
+  title: string
+  description: {
+    raw: any
+  }
+  image: {
+    url: string
+  }
+  icon: string
+}
+
+interface Props {
+  landingPage: LandingPage
+  lpItems: LPItems[]
+}
+
+export function Section6({ landingPage, lpItems }: Props) {
+  const session07 = [...lpItems].filter(lpItem => lpItem.type === "session07")
+  const session08 = [...lpItems].filter(lpItem => lpItem.type === "session08")
+
   return (
     <section
       className="bg-scroll md:bg-fixed md:bg-cover bg-center h-full py-16"
@@ -11,48 +75,26 @@ export function Section6() {
         {/* Content 1 */}
         <div className="bg-main rounded-xl py-12 px-4 lg:px-16 mb-16 mx-6">
           <h2 className="text-2xl lg:text-4xl font-bold text-second mb-6">
-            Perguntas frequentes
+            {landingPage.session07Heading1}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div>
-              <h3 className="text-xl font-bold text-second mb-4">
-                Quanto tempo leva o processo?
-              </h3>
-              <p className="text-base text-second">
-                O processo pode variar de vários meses a alguns anos, dependendo da situação de cada cliente e da complexidade do caso.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-second mb-4">
-                Quais são os documentos necessários?
-              </h3>
-              <p className="text-base text-second">
-                Os documentos necessários podem variar de acordo com a situação de cada cliente.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-second mb-4">
-                Eu preciso viajar para Portugal?
-              </h3>
-              <p className="text-base text-second">
-                Não, nós tomamos conta da solicitação e não há necessidade de o cliente viajar para Portugal.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-second mb-4">
-                Qual é a taxa de sucesso da solicitação?
-              </h3>
-              <p className="text-base text-second">
-                A taxa de sucesso varia de acordo com cada caso. No entanto, com nossa ajuda, temos altas chances de sucesso.
-              </p>
-            </div>
+            {session07.map((item, index) => (
+              <div key={index}>
+                <h3 className="text-xl font-bold text-second mb-4">
+                  {item.title}
+                </h3>
+                <div className="text-base text-second">
+                  <RichText content={item.description.raw} />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
         {/* Content 2 */}
         <div className="bg-second rounded-xl mb-16 mx-6">
           <Image
-            src="/landing-page/example_13.jpg"
+            src={landingPage.session08Imagem.url}
             alt=""
             height={0}
             width={0}
@@ -61,51 +103,29 @@ export function Section6() {
           />
           <div className="py-12 px-4 lg:px-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-main mb-6">
-              INVESTIMENTO
+              {landingPage.session08Heading1}
             </h2>
-            <h3 className="text-lg font-bold text-main mb-2">
-              Honorários advocatícios
-            </h3>
-            <div className="p-4 bg-[#D9D0C3] rounded mb-2">
-              <p className="text-lg mb-6">
-                Os <span className="text-main font-bold underline">honorários advocatícios</span> para a solicitação da sua <span className="text-main font-bold underline">cidadania portuguesa</span> são calculados com base na <span className="text-main font-bold underline">modalidade do processo</span>, considerando que para cada caso existem <span className="text-main font-bold underline">complexidades diferentes</span>.
-              </p>
-              <p className="text-lg">
-                Oferecemos uma <span className="text-main font-bold underline">consulta virtual</span> para <span className="text-main font-bold underline">avaliar</span> o seu caso e fornecer um <span className="text-main font-bold underline">orçamento</span> do <span className="text-main font-bold underline">investimento necessário</span>.
-              </p>
-            </div>
-            <h3 className="text-lg font-bold text-main mb-2">
-              Taxas e emolumentos
-            </h3>
-            <div className="p-4 bg-[#D9D0C3] rounded mb-2">
-              <p className="text-lg mb-6">
-                Para iniciar o processo é <span className="text-main font-bold underline">necessário</span> realizar o <span className="text-main font-bold underline">pagamento</span> de uma <span className="text-main font-bold underline">taxa</span> à Conservatória em que o processo irá tramitar.
-              </p>
-              <p className="text-lg">
-                <span className="text-main font-bold underline">As taxas variam</span> de acordo com a <span className="text-main font-bold underline">modalidade de cidadania</span> que está sendo requerida, mas costumam variar entre <span className="text-main font-bold underline">175€</span> para os processos de filho(a) e neto(a) e <span className="text-main font-bold underline">250€</span> para os demais casos.
-              </p>
-            </div>
-            <h3 className="text-lg font-bold text-main mb-2">
-              Documentos e apostilamentos
-            </h3>
-            <div className="p-4 bg-[#D9D0C3] rounded mb-2">
-              <p className="text-lg mb-6">
-                Os documentos necessários <span className="text-main font-bold underline">variam</span> de acordo com a <span className="text-main font-bold underline">modalidade do processo de nacionalidade</span> que está sendo requerido.
-              </p>
-              <p className="text-lg">
-                No <span className="text-main font-bold underline">momento oportuno</span> o nosso escritório dará o <span className="text-main font-bold underline">direcionamento</span> correto para emissão dos <span className="text-main font-bold underline">documentos necessários</span> para o seu processo.
-              </p>
-            </div>
+
+            {session08.map((item, index) => (
+              <div key={index}>
+                <h3 className="text-lg font-bold text-main mb-2">
+                  {item.title}
+                </h3>
+                <div className="p-4 bg-[#D9D0C3] rounded text-lg mb-6 text-main">
+                  <RichText content={item.description.raw} />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
         {/* Content 3 */}
         <div className="bg-second rounded-xl mb-16 flex flex-col-reverse md:flex-row mx-6">
           <div className="w-full py-12 lg:py-24 px-4 lg:px-16 bg-second rounded-bl-xl md:rounded-tl-xl rounded-br-xl md:rounded-br-none">
             <h2 className="text-2xl lg:text-3xl font-bold text-main leading-tight">
-              Contrate nossos serviços e realize o seu sonho de ser um cidadão português!
+              {landingPage.session09Heading1}
             </h2>
             <a
-              href={`https://api.whatsapp.com/send?phone=351939559818`}
+              href={`https://api.whatsapp.com/send?phone=${landingPage.session09Phone}`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-main text-white border border-main inline-block py-3 px-8 uppercase font-medium rounded mt-12 hover:bg-white hover:text-main transition-all"
@@ -114,7 +134,7 @@ export function Section6() {
             </a>
           </div>
           <Image
-            src="/landing-page/pt-flag.webp"
+            src={landingPage.session09Image.url}
             alt=""
             height={0}
             width={0}
@@ -126,17 +146,16 @@ export function Section6() {
         <div className="flex flex-col md:flex-row mx-6">
           <div className="w-full bg-main px-8 lg:px-16 py-8 lg:py-16 rounded-tl-xl rounded-tr-xl md:rounded-tr-none md:rounded-bl-xl">
             <h2 className="text-2xl lg:text-3xl font-bold text-second leading-tight mb-6">
-              Esperamos ter esclarecido os serviços e valores do investimento
+              {landingPage.session10Heading1}
             </h2>
-            <p className="text-second text-lg leading-tight mb-6">
-              Esperamos seu retorno para darmos andamento aos trabalhos. 
-            </p>
-            <p className="text-second text-lg leading-tight">
-              Atenciosamente,
-            </p>
+            {landingPage.session10Description.split('\n\n').map((paragraph, index) => (
+              <p key={index} className="text-2xl lg:text-3xl font-bold text-second leading-tight mb-6">
+                {paragraph}
+              </p>
+            ))}
           </div>
           <Image
-            src="/Logo_com-fundo_v2.jpg"
+            src={landingPage.session10Image.url}
             alt=""
             height={0}
             width={0}

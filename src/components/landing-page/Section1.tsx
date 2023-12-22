@@ -1,6 +1,52 @@
 import Image from "next/image"
 
-export function Section1() {
+interface LandingPage {
+  title: string
+  session01Logo: {
+    url: string
+  }
+  session01Slogan: string
+  session01Flag: {
+    url: string
+  }
+  session01Description: string
+  session02Heading1: string
+  session02Flag: {
+    url: string
+  }
+  session02Heading2: string
+  session03Heading1: string
+  session03Flag: {
+    url: string
+  }
+  session03Description: string
+  session04Heading1: string
+  session05Heading1: string
+  session05Description: string
+  session06Heading1: string
+  session06Description: string
+  session07Heading1: string
+  session08Imagem: {
+    url: string
+  }
+  session08Heading1: string
+  session09Heading1: string
+  session09Image: {
+    url: string
+  }
+  session09Phone: string
+  session10Heading1: string
+  session10Description: string
+  session10Image: {
+    url: string
+  }
+}
+
+interface Props {
+  landingPage: LandingPage
+}
+
+export function Section1({ landingPage }: Props) {
   return (
     <section className="relative h-screen">
       <Image
@@ -18,7 +64,7 @@ export function Section1() {
         <div className="h-auto flex flex-col md:flex-row items-center justify-center gap-12 md:gap-6">
           <Image
             alt="Logotipo da Mesquita e Dallabrida"
-            src="/Logo_Branca_sem-fundo.png"
+            src={landingPage.session01Logo.url}
             width={0}
             height={0}
             sizes="100vw"
@@ -27,10 +73,10 @@ export function Section1() {
           />
           <div className="flex flex-col gap-4 items-center">
             <h2 className="text-xl lg:text-2xl font-bold text-second text-center leading-tight">
-              Obtenha a sua <span className="underline">nacionalidade Portuguesa</span> com a nossa ajuda!
+              {landingPage.session01Slogan}
             </h2>
             <Image
-              src="/portugal_flag.png"
+              src={landingPage.session01Flag.url}
               alt=""
               height={0}
               width={0}
@@ -41,15 +87,11 @@ export function Section1() {
         </div>
         {/* Content 2 */}
         <div className="p-4">
-          <p className="text-sm sm:text-base md:text-lg font-bold text-second text-center pb-4">
-            Se você quer obter sua cidadania portuguesa, nós estamos aqui para te ajudar.
-          </p>
-          <p className="text-sm sm:text-base md:text-lg font-bold text-second text-center pb-4">
-            Com anos de experiência e conhecimento profundo do processo, nós fornecemos serviços confiáveis e eficientes para te ajudar a tornar-se um cidadão português e consequentemente um cidadadão europeu. 
-          </p>
-          <p className="text-sm sm:text-base md:text-lg font-bold text-second text-center">
-            Deixe-nos guiar você em cada etapa do processo.
-          </p>
+          {landingPage.session01Description.split('\n\n').map((paragraph, index) => (
+            <p key={index} className="text-sm sm:text-base md:text-lg font-bold text-second text-center pb-4">
+              {paragraph}
+            </p>
+          ))}
         </div>
       </div>
     </section>

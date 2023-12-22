@@ -1,9 +1,12 @@
+import { RichText } from '@/components/RichText'
+import { CMSIcon } from '@/components/CMSIcon'
+
 interface Props {
   props: {
     title: string
-    description?: string
+    description?: any
     custom?: string
-    icon?: React.ReactNode
+    icon?: any
   }
 }
 
@@ -14,11 +17,13 @@ export function Card({ props }: Props) {
         <h3 className="w-full text-second text-lg sm:text-xl font-bold">
           {props.title}
         </h3>
-        {props.icon}
+        <CMSIcon icon={props.icon} />
       </div>
-      {props.description && <p className="text-white text-base sm:text-lg mt-4">
-        {props.description}
-      </p>}
+      {props.description && (
+        <div className="text-white text-base sm:text-lg mt-4">
+          <RichText content={props.description} />
+        </div>
+      )}
     </div>
   )
 }

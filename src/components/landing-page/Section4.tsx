@@ -1,50 +1,89 @@
 import { Card2 } from "@/components/landing-page/Card2"
 
-export function Section4() {
+interface LandingPage {
+  title: string
+  session01Logo: {
+    url: string
+  }
+  session01Slogan: string
+  session01Flag: {
+    url: string
+  }
+  session01Description: string
+  session02Heading1: string
+  session02Flag: {
+    url: string
+  }
+  session02Heading2: string
+  session03Heading1: string
+  session03Flag: {
+    url: string
+  }
+  session03Description: string
+  session04Heading1: string
+  session05Heading1: string
+  session05Description: string
+  session06Heading1: string
+  session06Description: string
+  session07Heading1: string
+  session08Imagem: {
+    url: string
+  }
+  session08Heading1: string
+  session09Heading1: string
+  session09Image: {
+    url: string
+  }
+  session09Phone: string
+  session10Heading1: string
+  session10Description: string
+  session10Image: {
+    url: string
+  }
+}
+
+interface LPItems {
+  type: string
+  title: string
+  description: {
+    raw: any
+  }
+  image: {
+    url: string
+  }
+  icon: string
+}
+
+interface Props {
+  landingPage: LandingPage
+  lpItems: LPItems[]
+}
+
+export function Section4({ landingPage, lpItems }: Props) {
+  const session05 = [...lpItems].filter(lpItem => lpItem.type === "session05")
+
   return (
     <section className="w-full bg-main">
       {/* Container */}
       <div className="max-w-5xl w-full mx-auto py-16 px-4 lg:px-16">
         <h2 className="text-2xl lg:text-3xl text-second font-bold leading-tight mb-6">
-          Por que escolher o nosso escritório para ajudá-lo em seu processo de cidadania portuguesa?
+          {landingPage.session05Heading1}
         </h2>
         <p className="text-base text-second mb-6">
-          Nós realizamos o processo de solicitação de nacionalidade portuguesa desde o início até a conclusão do processo.
+          {landingPage.session05Description}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-24 gap-y-6">
-          <Card2 props={{
-            title: "Atendimento personalizado",
-            description: "Nós entendemos que cada cliente tem necessidades e situações diferentes. Oferecemos atendimento personalizado para cada solicitação de nacionalidade.",
-            img: {
-              src: "/landing-page/example_10.jpg",
-              alt: ""
-            }
-          }} />
-          <Card2 props={{
-            title: "Expertise e Conhecimento",
-            description: "Possuímos expertise e conhecimento nas leis portuguesas e nos trâmites para a solicitação de cidadania portuguesa.",
-            img: {
-              src: "/landing-page/example_11.webp",
-              alt: ""
-            }
-          }} />
-          <Card2 props={{
-            title: "Transparência e Honestidade",
-            description: "Acreditamos em relações transparentes e honestas com nossos clientes, buscando a melhor solução para a sua situação.",
-            img: {
-              src: "/landing-page/example_12.jpg",
-              alt: ""
-            }
-          }} />
-          <Card2 props={{
-            title: "Agilidade e Eficiência",
-            description: "Além de oferecer um atendimento personalizado e expertise em cidadania portuguesa, somos ágeis e eficientes na condução dos processos, garantindo que você obtenha a sua cidadania de forma rápida e segura.",
-            img: {
-              src: "/landing-page/example_13.webp",
-              alt: ""
-            }
-          }} />
+          {session05.map((item, index) => (
+            <Card2 key={index} props={{
+              title: item.title,
+              description: item.description.raw,
+              img: {
+                src: item.image.url,
+                alt: ""
+              }
+            }} />
+          ))}
         </div>
       </div>
     </section>
