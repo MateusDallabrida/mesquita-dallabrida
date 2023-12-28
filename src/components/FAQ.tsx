@@ -41,6 +41,7 @@ export function FAQ({ faqs }: Props) {
             width={0}
             height={0}
             sizes="100vw"
+            priority
             className="w-full max-h-[768px] object-cover rounded-xl"
           />
         </div>

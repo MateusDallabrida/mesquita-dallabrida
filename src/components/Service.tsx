@@ -17,6 +17,7 @@ export function Service({ srcImage, altImage, title, phone }: Props) {
         width={0}
         height={0}
         sizes="100vw"
+        priority
         className="w-full h-[400px] object-cover rounded-xl"
       />
       <p className="w-full text-center px-4 text-white text-lg sm:text-xl font-bold uppercase absolute bottom-20">

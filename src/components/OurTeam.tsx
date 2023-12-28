@@ -31,6 +31,7 @@ export function OurTeam({ ourTeams }: Props) {
                 width={0}
                 height={0}
                 sizes="100vw"
+                priority
                 className="w-24 sm:w-32 h-24 sm:h-32 rounded-full bg-white"
               />
 

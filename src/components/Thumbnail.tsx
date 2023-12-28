@@ -32,6 +32,7 @@ export function Thumbnail({ post }: Props) {
           width={0}
           height={0}
           sizes="100vw"
+          priority
           className="w-full aspect-video bg-gray-100 rounded-xl object-cover"
         />
         <p className="text-sm uppercase text-main font-bold">

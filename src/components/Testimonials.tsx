@@ -52,6 +52,7 @@ export function Testimonials({ testimonials }: Props) {
         height={0}
         width={0}
         sizes="100vw"
+        priority
         className="absolute w-full h-full object-cover"
       />
       <div className="absolute w-full h-full bg-[#5a1f24] opacity-40" />

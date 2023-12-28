@@ -21,6 +21,7 @@ export function Footer({ footer }: Props) {
         width={0}
         height={0}
         sizes="100vw"
+        priority
         className="w-full h-full object-cover"
       />
       <div className="absolute w-full h-full bg-[#343f2c] opacity-60" />
@@ -31,6 +32,7 @@ export function Footer({ footer }: Props) {
           width={0}
           height={0}
           sizes="100vw"
+          priority
           className="w-52 md:w-96 m-auto"
         />
         <div>

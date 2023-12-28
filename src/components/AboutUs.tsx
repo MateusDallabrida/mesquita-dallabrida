@@ -26,6 +26,7 @@ export function AboutUs({ aboutUs }: Props) {
               width={0}
               height={0}
               sizes="100vw"
+              priority
               className="w-full h-full object-cover rounded-tl-[64px] rounded-tr rounded-br-[64px] rounded-bl"
             />
             <div className="absolute -left-4 -bottom-4 -z-10 w-full h-full rounded-tl-[64px] rounded-tr rounded-br-[64px] rounded-bl bg-main" />
