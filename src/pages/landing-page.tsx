@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google'
+import Head from 'next/head'
 import Image from "next/image"
 
 import { Section1 } from "@/components/landing-page/Section1"
@@ -11,15 +12,24 @@ import { Section6 } from "@/components/landing-page/Section6"
 
 import { getLandingPage } from '@/utils/getLandingPage'
 import { getLPItems } from '@/utils/getLPItems'
+import { getTags } from '@/utils/getTags'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function LandingPage2({ data }: any) {
   if (!data) return
-  const { landingPage, lpItems } = JSON.parse(data)
+  const { landingPage, lpItems, tags } = JSON.parse(data)
+
+  const homeTags = tags.filter((tag: any) => tag.page === "Início")
+  const title = homeTags.filter((homeTag: any) => homeTag.tag === "Title")[0]
+  const metaDescription = homeTags.filter((homeTag: any) => homeTag.tag === "Meta Description")[0]
 
   return (
     <div className={inter.className}>
+      <Head>
+        <title>{title.value}</title>
+        <meta name="description" content={metaDescription.value} />
+      </Head>
       <Image
         alt="Logotipo da Mesquita e Dallabrida"
         src="/Logo_com-fundo_v2.jpg"
@@ -42,10 +52,11 @@ export default function LandingPage2({ data }: any) {
 export async function getStaticProps() {
   const { landingPage } = await getLandingPage()
   const { lpItems } = await getLPItems()
+  const { tags } = await getTags()
 
   return {
     props: {
-      data: JSON.stringify({ landingPage, lpItems }) || null
+      data: JSON.stringify({ landingPage, lpItems, tags }) || null
     }
   }
 }

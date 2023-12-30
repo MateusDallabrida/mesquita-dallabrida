@@ -5,7 +5,6 @@ export default function Document() {
     <Html lang="pt-BR">
       <Head>
         <link rel="icon" href="#" />
-        <meta name="description" content="Mesquita & Dallabrida - Advocacia Internacional" />
       </Head>
       <body>
         <Main />

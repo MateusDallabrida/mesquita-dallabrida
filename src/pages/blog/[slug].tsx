@@ -1,18 +1,21 @@
+import Head from 'next/head'
+import Image from "next/image"
+
 import { Communication } from "@/components/Communication"
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
 import { Thumbnail } from '@/components/Thumbnail'
 import { RichText } from '@/components/RichText'
-import Image from "next/image"
+import { Chat } from "@/components/landing-page/Chat"
 
 import { getFooter } from '@/utils/getFooter'
 import { getPosts } from '@/utils/getPosts'
 import { getPostBySlug } from '@/utils/getPostBySlug'
-import { Chat } from "@/components/landing-page/Chat"
+import { getTags } from '@/utils/getTags'
 
 export default function Post({ data }: any) {
   if (!data) return
-  const { footer, posts, post } = JSON.parse(data)
+  const { footer, posts, post, tags } = JSON.parse(data)
 
   function getRandomInt(min: number, max: number) {
     min = Math.ceil(min);
@@ -28,10 +31,18 @@ export default function Post({ data }: any) {
       )
     }
     return thumbnails
-  } 
+  }
+
+  const pageTags = tags.filter((tag: any) => tag.page === post.title)
+  const title = pageTags.filter((pageTag: any) => pageTag.tag === "Title")[0]
+  const metaDescription = pageTags.filter((pageTag: any) => pageTag.tag === "Meta Description")[0]
 
   return (
     <>
+      <Head>
+        <title>{title.value}</title>
+        <meta name="description" content={metaDescription.value} />
+      </Head>
       <Communication />
       <Header />
       <div className="relative sm:static top-[64px]">
@@ -86,13 +97,15 @@ export async function getStaticProps(context: any) {
   const { footer } = await getFooter()
   const { posts } = await getPosts()
   const { post } = await getPostBySlug(slug)
+  const { tags } = await getTags()
 
   return {
     props: {
       data: JSON.stringify({
         footer,
         posts,
-        post
+        post,
+        tags
       }) || null
     }
   }

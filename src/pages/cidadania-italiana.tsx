@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from "next/image"
 
 import Slider from "react-slick"
@@ -21,6 +22,7 @@ import { getAboutUs } from '@/utils/getAboutUs'
 import { getInfos } from '@/utils/getInfos'
 import { getQualities } from '@/utils/getQualities'
 import { getFaqs } from '@/utils/getFaqs'
+import { getTags } from '@/utils/getTags'
 
 interface Testimonial {
   name: string
@@ -33,7 +35,11 @@ interface Testimonial {
 
 export default function CidadaniaItaliana({ data }: any) {
   if (!data) return
-  const { footer, testimonials, aboutUs, infos, qualities, faqs } = JSON.parse(data)
+  const { footer, testimonials, aboutUs, infos, qualities, faqs, tags } = JSON.parse(data)
+
+  const homeTags = tags.filter((tag: any) => tag.page === "Busca por Certidões")
+  const title = homeTags.filter((homeTag: any) => homeTag.tag === "Title")[0]
+  const metaDescription = homeTags.filter((homeTag: any) => homeTag.tag === "Meta Description")[0]
 
   const settings = {
     infinite: true,
@@ -60,6 +66,10 @@ export default function CidadaniaItaliana({ data }: any) {
 
   return (
     <>
+      <Head>
+        <title>{title.value}</title>
+        <meta name="description" content={metaDescription.value} />
+      </Head>
       <Communication />
       <Header />
       <div className="relative sm:static top-[64px]">
@@ -113,6 +123,7 @@ export async function getStaticProps() {
   const { infos } = await getInfos()
   const { qualities } = await getQualities()
   const { faqs } = await getFaqs()
+  const { tags } = await getTags()
 
   return {
     props: {
@@ -122,7 +133,8 @@ export async function getStaticProps() {
         aboutUs,
         infos,
         qualities,
-        faqs
+        faqs,
+        tags
       }) || null
     }
   }
