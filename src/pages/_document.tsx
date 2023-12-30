@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="pt-BR">
       <Head>
-        <link rel="icon" href="#" />
+        <link rel="icon" href="/Logo_com-fundo_v2.jpg" />
       </Head>
       <body>
         <Main />
